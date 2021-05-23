@@ -57,7 +57,11 @@
         <!--Home Page-->
         <!--Menubar-->
         <div id="navigation-bar">
-            <img src="./images/debtfreedom_logo.png" alt="logo">
+           <a href="/">
+               
+               <img src="./images/debtfreedom_logo.png" alt="logo">
+           </a>
+           
             <div class="menubar">
                 <span class="first-span"></span>
                 <span class="second-span"></span>
@@ -130,7 +134,7 @@
                             <span class="color">Con más de 11 años</span> en el mercado hispano, nuestros principales
                             servicios son:
                             <br>
-                            <ul>
+                            <ul style="list-style: none;">
                                 <li style="font-size: 60%; color: #83c140; text-decoration: none;">Asesoramiento para la
                                     liquidación</li>
                                 <li style="font-size: 60%; color: #83c140; text-decoration: none;">Consolidación de
@@ -361,74 +365,75 @@
     <!--blog end-->
     <!--contact-->
     <div id="contact">
-        <div class="contact-header">Contact <span class="color"> Me</span>
-            <div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div>
-        </div>
-        <div class="contact-content">
+         <div class="contact-header"> Envíanos un<span class="color"> mensaje</span>
+        <!-- <div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div></div> -->
+        <br>
+        <div class="contact-content" style="min-height: 80vh;">
             <!--Contact form-->
-            <div class="contact-form">
-                <div class="form-header">
-                    Message Me
-                </div>
-                <form id="myForm" action="#">
+             <div class="contact-form">
+                 <div class="form-header">
+                     Contacta con nosotros
+                 </div>
+                 <form id="myForm" action="#">
                     <div class="input-line">
-                        <input id="name" type="text" placeholder="Name" class="input-name">
-                        <input id="email" type="email" placeholder="Email" class="input-name">
+                        <input  id="name" type="text" placeholder="Nombre" class="input-name">
+                        <input id="email" type="email" placeholder="Email"  class="input-name">
                     </div>
-                    <input type="text" id="subject" placeholder="subject" class="input-subject">
-                    <textarea id="body" class="input-textarea" placeholder="message"></textarea>
-                    <button type="button" id="submit" value="send">Submit</button>
-                </form>
-
-            </div>
+                    <input type="text" id="subject" placeholder="Asunto" class="input-subject">
+                    <textarea id ="body" class="input-textarea" placeholder="Mensaje"></textarea>
+                    <button type="button" id ="submit" value="send">Enviar</button>
+                 </form>
+               
+             </div>
             <!--Contact form-->
             <!--Contact information-->
-            <div class="contact-info">
+             <div class="contact-info">
                 <div class="contact-info-header">
-                    Contact Info
+                    Información de Contacto
                 </div>
-                <div class="contact-info-content">
-                    <div class="contect-info-content-line">
-                        <img src="./images/icon-name.png" class="icon" alt="name-icon">
-                        <div class="contact-info-icon-text">
-                            <h6>Name</h6>
-                            <p>Arlo Brown</p>
-                        </div>
-                    </div>
-                    <div class="contect-info-content-line">
-                        <img src="./images/icon-location.png" class="icon" alt="location-icon">
-                        <div class="contact-info-icon-text">
-                            <h6>Location</h6>
-                            <p>New York, USA</p>
-                        </div>
-                    </div>
-                    <div class="contect-info-content-line">
-                        <img src="./images/icon-phone.png" class="icon" alt="phone-icon">
-                        <div class="contact-info-icon-text">
-                            <h6>Call</h6>
-                            <p>+9865376531</p>
-                        </div>
-                    </div>
-
-                    <div class="contect-info-content-line">
-                        <img src="./images/icon-email.png" class="icon" alt="email-icon">
-                        <div class="contact-info-icon-text">
-                            <h6>Email</h6>
-                            <p>Info@example.com</p>
-                        </div>
-                    </div>
+                <div class="contact-info-content"  style="min-height: 92.3vh">
+                <div class="contect-info-content-line">
+                    <img src="./images/icon-name.png" class="icon" alt="name-icon">
+                    <div class="contact-info-icon-text">
+                        <h6>Empresa</h6>
+                        <p>Debt Freedom USA LLC</p>
+                  </div>
                 </div>
-                <!--Contact information end-->
-            </div>
+                <div class="contect-info-content-line">
+                  <img src="./images/icon-location.png" class="icon" alt="location-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>¿Dónde estamos?</h6>
+                      <p>Miami, USA</p>
+                </div>
+              </div>
+              <div class="contect-info-content-line">
+                  <img src="./images/icon-phone.png" class="icon" alt="phone-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>Llama directamente</h6>
+                      <p>+1-800-854-3030</p>
+                </div>
+              </div>
+              
+              <div class="contect-info-content-line">
+                  <img src="./images/icon-email.png" class="icon" alt="email-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>Email</h6>
+                      <p>info@DebtfreedomUSA.com</p>
+                </div>
+              </div>
+                </div>
+            <!--Contact information end-->
+           </div>
         </div>
         <!--copyright-section You Can Remove After Downloading-->
-        <div class="footer" id="footer">
+       
+        <!--copyright-section-->
+    </div>
+     <div class="footer" id="footer">
             <div class="footer-text">
                 <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Vission Solutions
             </div>
         </div>
-        <!--copyright-section-->
-    </div>
     <!--contact end-->
     </div>
     <!--all the divisions-->

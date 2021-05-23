@@ -46,6 +46,7 @@ html {
     padding-top: 50px;
     min-height: 500px;
     height: auto;
+    width: auto;
     max-width: 810px;
     margin: 30px auto;
     background: #ffffff;
@@ -634,7 +635,7 @@ label span:before {
 }
 
 #navigation-bar {
-    position: fixed;
+    position: absolute;
     height: 100px;
     width: 100%;
     z-index: 3;
@@ -735,4 +736,31 @@ label span:before {
     bottom: 0%;
     right: 0;
     object-fit: cover;
+}
+
+@media (max-height: 700px) and (max-width:1380px) {
+    .imagen {
+        vertical-align: middle;
+        position: fixed;
+        bottom: 0%;
+        right: 0;
+        object-fit: cover;
+        width: 400px;
+        height: 400px;
+    }
+    .multi_step_form #msform {
+        text-align: center;
+        position: relative;
+        padding-top: 50px;
+        min-height: 400px;
+        height: auto;
+        width: auto;
+        max-width: 700px;
+        margin: 30px auto;
+        background: #ffffff;
+        z-index: 1;
+        border-radius: 10%;
+        margin-top: 10%;
+        margin-right: 40%;
+    }
 }

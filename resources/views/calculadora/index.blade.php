@@ -32,7 +32,7 @@
     </div>
     <!--Menubar End-->
     <section class=" multi_step_form">
-        <img src="/images/can-i-help-you-min.png" class="imagen" width="735px" height="700px" alt="calculator_girl">
+        <img src="/images/can-i-help-you.jpg" class="imagen"  alt="calculator_girl">
         <form id="msform">
             <!-- Tittle -->
             {{-- <div class="tittle">

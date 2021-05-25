@@ -110,7 +110,7 @@
             </div>
             <!--header image-->
             <div class="header-image">
-                <img src="images/man.png" alt="logo">
+                <img src="images/man.jpg" alt="logo">
             </div>
             <!--header image end-->
         </div>

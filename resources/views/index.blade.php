@@ -91,7 +91,7 @@
                             data-rotate='[ " con tus deudas.", " a crecer.", " a volar." ]'></span>
                         <span class="slash">|</span>
                     </div>
-                    <p style="font-size: 20px; margin-top:40px">Elija el monto de su deuda</p>
+                    <p style="font-size: 20px; margin-top:40px">Crea tu programa de pagos</p>
                     <div class="range-slider" style="margin-top: 0px">
 
                         <input class="range-slider__range" type="range" id="priceSlider" value="1000" min="1000"

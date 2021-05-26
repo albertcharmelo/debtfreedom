@@ -38,9 +38,6 @@
         <!--Main-Section-->
         <!--Navigator-fullscreen-->
         <div id="navigation-content">
-            <div class="logo">
-                <img src="./images/debtfreedom_logo.png" alt="logo">
-            </div>
             <div class="navigation-close">
                 <span class="close-first"></span>
                 <span class="close-second"></span>
@@ -53,15 +50,21 @@
                 <a href="#" data-text="BLOG" id="blog-link">BLOG</a>
             </div>
         </div>
+       
         <!--Navigator-Fullscreen END-->
         <!--Home Page-->
         <!--Menubar-->
         <div id="navigation-bar">
-           <a href="/">
-               
+           <div class="nav-new">
+                <a href="/">
                <img src="./images/debtfreedom_logo.png" alt="logo">
-           </a>
-           
+                </a>
+                <a href="#" class="nav-new-a" id="home-link2">INICIO</a>
+                <a href="#" class="nav-new-a" id="about-link2">NOSOTROS</a>
+                <a href="#" class="nav-new-a" id="portfolio-link2">SERVICIOS</a>
+                <a href="#" class="nav-new-a" id="contact-link2">CONTACTO</a>
+                <a href="#" class="nav-new-a" id="blog-link2">BLOG</a>
+            </div>
             <div class="menubar">
                 <span class="first-span"></span>
                 <span class="second-span"></span>
@@ -70,21 +73,18 @@
         </div>
         <!--Menubar End-->
         <!--Header-->
-        <div id="header">
+        <main id="header">
             <div id="particles"></div>
             <!--Social Media Links-->
             <div class="social-media-links">
-                <a href="#"><img src="images/instagram logo.png" class="social-media" alt="instagram-logo"></a>
-                <!--Your instagram homepage link inser in place of "#"-->
-                <a href="#"><img src="images/facebook logo.png" class="social-media" alt="facebook-logo"></a>
-                <a href="#"><img src="images/linkedin logo.png" class="social-media" alt="linkedin-logo"></a>
-                <a href="#"><img src="images/twitter logo.png" class="social-media" alt="twitter-logo"></a>
-
+                <a href="https://www.instagram.com/debtfreedomusa/"  target="_blank"><img src="images/instagram logo.png" class="social-media" alt="instagram-logo"></a>
+                <a href="https://www.facebook.com/debtfreedomofficial"  target="_blank"><img src="images/facebook logo.png" class="social-media" alt="facebook-logo"></a>
             </div>
             <!--Social Media Links end-->
+
             <div class="header-content">
                 <div class="header-content-box">
-                    <div class="firstline"><span class="color">DEBT </span>FREEDOM</div>
+                    <div class="firstline"><span class="color">DEBT </span>FREEDOM <span class="usa">USA</span></div>
                     <div class="secondline">
                         Te ayudaremos
                         <span class="txt-rotate color" data-period="1200"
@@ -101,10 +101,8 @@
                     </div>
                     <button type="button" id="calcularBtn" class="calcular" value="send">Calcular</button>
                     <div class="contact">
-                        <a href="Mailto:#"><img src="images/wpme.png" alt="email-pic" class="contactpic"></a>
-                        <!--Your email Id write in place of "#"-->
-                        <a href="Tel:#"><img src="images/call.png" alt="phone-pic" class="contactpic"></a>
-                        <!--Your telephone number Id write in place of "#"-->
+                        <a href="https://wa.me/18008543030"><img src="images/wpme.png" alt="whatsapp-pic" class="contactpic"></a>
+                        <a href="Tel:+18008543030"><img src="images/call.png" alt="phone-pic" class="contactpic"></a>
                     </div>
                 </div>
             </div>
@@ -113,7 +111,7 @@
                 <img src="images/man.jpg" alt="logo">
             </div>
             <!--header image end-->
-        </div>
+        </main>
         <!--Header End-->
         <!--HomePage End-->
         <!--Main-Section End-->

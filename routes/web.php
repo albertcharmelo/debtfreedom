@@ -26,8 +26,8 @@ Route::prefix('calculator')->group(function () {
 Route::prefix('panel')->group(function () {
 
     // Route::get('/', 'PanelController@index');
-    Route::get('/', 'PostController@allPost');
-    Route::get('/create', 'PostController@create');
+    Route::get('/', 'PostController@allPost')->name('panel.index');
+    Route::get('/create', 'PostController@create')->name('panel.create');
 
     Route::post('/post/create', 'PostController@createPost')->name('post.create');
 });

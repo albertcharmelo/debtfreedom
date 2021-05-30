@@ -21,3 +21,13 @@ Route::prefix('calculator')->group(function () {
         return 'ok';
     });
 });
+
+
+Route::prefix('panel')->group(function () {
+
+    // Route::get('/', 'PanelController@index');
+    Route::get('/', 'PostController@allPost');
+    Route::get('/create', 'PostController@create');
+
+    Route::post('/post/create', 'PostController@createPost')->name('post.create');
+});

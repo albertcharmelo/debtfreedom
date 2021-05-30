@@ -10,7 +10,7 @@
     <meta name="author" content="willy wonka" />
     <title>Debt Freedom | USA</title>
     <!--favicon-img-->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
     <!--favicon-img-->
     <!--main css file should not be removed -->
     <link rel="stylesheet" href="css/index.css">
@@ -50,14 +50,14 @@
                 <a href="#" data-text="BLOG" id="blog-link">BLOG</a>
             </div>
         </div>
-       
+
         <!--Navigator-Fullscreen END-->
         <!--Home Page-->
         <!--Menubar-->
         <div id="navigation-bar">
-           <div class="nav-new">
+            <div class="nav-new">
                 <a href="/">
-               <img src="./images/debtfreedom_logo.png" alt="logo">
+                    <img src="./images/debtfreedom_logo.png" alt="logo">
                 </a>
                 <a href="#" class="nav-new-a" id="home-link2">INICIO</a>
                 <a href="#" class="nav-new-a" id="about-link2">NOSOTROS</a>
@@ -77,8 +77,10 @@
             <div id="particles"></div>
             <!--Social Media Links-->
             <div class="social-media-links">
-                <a href="https://www.instagram.com/debtfreedomusa/"  target="_blank"><img src="images/instagram logo.png" class="social-media" alt="instagram-logo"></a>
-                <a href="https://www.facebook.com/debtfreedomofficial"  target="_blank"><img src="images/facebook logo.png" class="social-media" alt="facebook-logo"></a>
+                <a href="https://www.instagram.com/debtfreedomusa/" target="_blank"><img src="images/instagram logo.png"
+                        class="social-media" alt="instagram-logo"></a>
+                <a href="https://www.facebook.com/debtfreedomofficial" target="_blank"><img
+                        src="images/facebook logo.png" class="social-media" alt="facebook-logo"></a>
             </div>
             <!--Social Media Links end-->
 
@@ -101,7 +103,8 @@
                     </div>
                     <button type="button" id="calcularBtn" class="calcular" value="send">Calcular</button>
                     <div class="contact">
-                        <a href="https://wa.me/18008543030"><img src="images/wpme.png" alt="whatsapp-pic" class="contactpic"></a>
+                        <a href="https://wa.me/18008543030"><img src="images/wpme.png" alt="whatsapp-pic"
+                                class="contactpic"></a>
                         <a href="Tel:+18008543030"><img src="images/call.png" alt="phone-pic" class="contactpic"></a>
                     </div>
                 </div>
@@ -363,76 +366,76 @@
     <!--blog end-->
     <!--contact-->
     <div id="contact">
-         <div class="contact-header"> Envíanos un<span class="color"> mensaje</span>
-        <!-- <div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div></div> -->
-        <br>
-        <div class="contact-content" style="min-height: 80vh;">
-            <!--Contact form-->
-             <div class="contact-form">
-                 <div class="form-header">
-                     Contacta con nosotros
-                 </div>
-                 <form id="myForm" action="#">
-                    <div class="input-line">
-                        <input  id="name" type="text" placeholder="Nombre" class="input-name">
-                        <input id="email" type="email" placeholder="Email"  class="input-name">
+        <div class="contact-header"> Envíanos un<span class="color"> mensaje</span>
+            <!-- <div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div></div> -->
+            <br>
+            <div class="contact-content" style="min-height: 80vh;">
+                <!--Contact form-->
+                <div class="contact-form">
+                    <div class="form-header">
+                        Contacta con nosotros
                     </div>
-                    <input type="text" id="subject" placeholder="Asunto" class="input-subject">
-                    <textarea id ="body" class="input-textarea" placeholder="Mensaje"></textarea>
-                    <button type="button" id ="submit" value="send">Enviar</button>
-                 </form>
-               
-             </div>
-            <!--Contact form-->
-            <!--Contact information-->
-             <div class="contact-info">
-                <div class="contact-info-header">
-                    Información de Contacto
+                    <form id="myForm" action="#">
+                        <div class="input-line">
+                            <input id="name" type="text" placeholder="Nombre" class="input-name">
+                            <input id="email" type="email" placeholder="Email" class="input-name">
+                        </div>
+                        <input type="text" id="subject" placeholder="Asunto" class="input-subject">
+                        <textarea id="body" class="input-textarea" placeholder="Mensaje"></textarea>
+                        <button type="button" id="submit" value="send">Enviar</button>
+                    </form>
+
                 </div>
-                <div class="contact-info-content"  style="min-height: 92.3vh">
-                <div class="contect-info-content-line">
-                    <img src="./images/icon-name.png" class="icon" alt="name-icon">
-                    <div class="contact-info-icon-text">
-                        <h6>Empresa</h6>
-                        <p>Debt Freedom USA LLC</p>
-                  </div>
+                <!--Contact form-->
+                <!--Contact information-->
+                <div class="contact-info">
+                    <div class="contact-info-header">
+                        Información de Contacto
+                    </div>
+                    <div class="contact-info-content" style="min-height: 92.3vh">
+                        <div class="contect-info-content-line">
+                            <img src="./images/icon-name.png" class="icon" alt="name-icon">
+                            <div class="contact-info-icon-text">
+                                <h6>Empresa</h6>
+                                <p>Debt Freedom USA LLC</p>
+                            </div>
+                        </div>
+                        <div class="contect-info-content-line">
+                            <img src="./images/icon-location.png" class="icon" alt="location-icon">
+                            <div class="contact-info-icon-text">
+                                <h6>¿Dónde estamos?</h6>
+                                <p>Miami, USA</p>
+                            </div>
+                        </div>
+                        <div class="contect-info-content-line">
+                            <img src="./images/icon-phone.png" class="icon" alt="phone-icon">
+                            <div class="contact-info-icon-text">
+                                <h6>Llama directamente</h6>
+                                <p>+1-800-854-3030</p>
+                            </div>
+                        </div>
+
+                        <div class="contect-info-content-line">
+                            <img src="./images/icon-email.png" class="icon" alt="email-icon">
+                            <div class="contact-info-icon-text">
+                                <h6>Email</h6>
+                                <p>info@DebtfreedomUSA.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Contact information end-->
                 </div>
-                <div class="contect-info-content-line">
-                  <img src="./images/icon-location.png" class="icon" alt="location-icon">
-                  <div class="contact-info-icon-text">
-                      <h6>¿Dónde estamos?</h6>
-                      <p>Miami, USA</p>
-                </div>
-              </div>
-              <div class="contect-info-content-line">
-                  <img src="./images/icon-phone.png" class="icon" alt="phone-icon">
-                  <div class="contact-info-icon-text">
-                      <h6>Llama directamente</h6>
-                      <p>+1-800-854-3030</p>
-                </div>
-              </div>
-              
-              <div class="contect-info-content-line">
-                  <img src="./images/icon-email.png" class="icon" alt="email-icon">
-                  <div class="contact-info-icon-text">
-                      <h6>Email</h6>
-                      <p>info@DebtfreedomUSA.com</p>
-                </div>
-              </div>
-                </div>
-            <!--Contact information end-->
-           </div>
+            </div>
+            <!--copyright-section You Can Remove After Downloading-->
+
+            <!--copyright-section-->
         </div>
-        <!--copyright-section You Can Remove After Downloading-->
-       
-        <!--copyright-section-->
-    </div>
-     <div class="footer" id="footer">
+        <div class="footer" id="footer">
             <div class="footer-text">
                 <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Vission Solutions
             </div>
         </div>
-    <!--contact end-->
+        <!--contact end-->
     </div>
     <!--all the divisions-->
     <script src="js/jquery.min.js"></script>

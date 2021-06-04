@@ -50,7 +50,8 @@
     width: 100%;
     border-radius: 6px;
     overflow: hidden;
-    color: coral;
+    display: flex;
+    align-content: center;
 }
 .container-all img{
     max-width: 100%;

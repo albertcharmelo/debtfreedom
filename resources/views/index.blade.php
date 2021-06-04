@@ -214,7 +214,8 @@
         <div class="slider-container d-md-none d-lg-block hidden-md hidden-sm d-sm-none d-none d-sm-block d-md-block"
             style="position: relative;height:auto">
             <div id="otro" style="height: 500px !important"> </div>
-            <div class="slider d-flex justify-content-center align-items-center  mt-5" style="height:auto">
+            <div class="slider d-flex justify-content-center align-items-center  mt-5" style="height:auto"
+                id="sliderContainer">
                 <div class="container-all">
 
                     <input type="radio" id="1" name="image-slide" hidden />

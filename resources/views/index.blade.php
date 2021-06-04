@@ -81,10 +81,10 @@
             <div id="particles"></div>
             <!--Social Media Links-->
             <div class="social-media-links">
-                <a href="https://www.instagram.com/debtfreedomusa/" target="_blank"><img src="images/instagram logo.png"
+                <a href="https://www.instagram.com/debtfreedomusa/" target="_blank"><img src="images/instagram_logo.png"
                         class="social-media" alt="instagram-logo"></a>
                 <a href="https://www.facebook.com/debtfreedomofficial" target="_blank"><img
-                        src="images/facebook logo.png" class="social-media" alt="facebook-logo"></a>
+                        src="images/facebook_logo.png" class="social-media" alt="facebook-logo"></a>
             </div>
             <!--Social Media Links end-->
 
@@ -195,6 +195,46 @@
                             ¡PUEDES CONSULTAR GRATIS! 
                         </p>
              </div>
+        <!-- slider -->
+        <div class="container-all">
+
+        <input type="radio" id="1" name="image-slide" hidden/>
+        <input type="radio" id="2" name="image-slide" hidden/>
+        <input type="radio" id="3" name="image-slide" hidden/>
+
+        <div class="slide">
+
+            <div class="item-slide">
+                <img src="Images/img1.jpg">
+            </div>
+
+            <div class="item-slide">
+                <img src="Images/img2.jpg">
+            </div>
+
+            <div class="item-slide">
+                <img src="Images/img3.jpg">
+            </div>
+
+        </div>
+
+        <div class="pagination">
+           
+            <label class="pagination-item" for="1">
+                <img src="Images/img1.jpg">
+            </label>
+            
+            <label class="pagination-item" for="2">
+                <img src="Images/img2.jpg">
+            </label>
+            
+            <label class="pagination-item" for="3">
+                <img src="Images/img3.jpg">
+            </label>
+            
+        </div>
+        
+    </div>
         </div>
         </div>
     </div>

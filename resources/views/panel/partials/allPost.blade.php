@@ -6,12 +6,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 @endsection
 @section('datos')
+    @include('panel.partials.modal-delete')
     <div class="row">
         <div class="col-md-12 grid-margin">
             <div class="card">
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-lg-3 col-md-6">
+                        <div class="col-lg-4 col-md-6">
                             <div class="d-flex">
                                 <div class="wrapper">
                                     <h3 class="mb-0 font-weight-semibold">{{ $posts->count() }}</h3>
@@ -22,7 +23,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 mt-md-0 mt-4">
+                        <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
                             <div class="d-flex">
                                 <div class="wrapper">
                                     <h3 class="mb-0 font-weight-semibold">{{ $visitas }}</h3>
@@ -34,30 +35,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 mt-md-0 mt-4">
+                        <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
                             <div class="d-flex">
                                 <div class="wrapper">
-                                    <h3 class="mb-0 font-weight-semibold">7,688</h3>
-                                    <h5 class="mb-0 font-weight-medium text-primary">Conversation</h5>
-                                    <p class="mb-0 text-muted">+57.62(+0.76%)</p>
+                                    <h3 class="mb-0 font-weight-semibold">
+                                        {{ $posts->where('estado', 'publish')->count() }}
+                                    </h3>
+                                    <h5 class="mb-0 font-weight-medium text-primary">Post Publicados</h5>
+
                                 </div>
                                 <div class="wrapper my-auto ml-auto ml-lg-4">
                                     <canvas height="50" width="100" id="stats-line-graph-3"></canvas>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 mt-md-0 mt-4">
-                            <div class="d-flex">
-                                <div class="wrapper">
-                                    <h3 class="mb-0 font-weight-semibold">1,553</h3>
-                                    <h5 class="mb-0 font-weight-medium text-primary">Downloads</h5>
-                                    <p class="mb-0 text-muted">+138.97(+0.54%)</p>
-                                </div>
-                                <div class="wrapper my-auto ml-auto ml-lg-4">
-                                    <canvas height="50" width="100" id="stats-line-graph-4"></canvas>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -103,10 +95,43 @@
                                 </td>
                                 <td>
                                     <span>
-                                        <div class="btn btn-danger"><i class="fas fa-trash"></i></div>
+                                        <button class="btn btn-danger" id="delete" data-toggle="modal"
+                                            data-target="#deleteModal" data-id="{{ $post->id }}"><i
+                                                class="fas fa-trash"></i></button>
                                     </span>
                                     <span>
-                                        <div class="btn btn-info"><i class="fas fa-edit"></i></div>
+                                        <a href="{{ route('panel.edit', $post->id) }}" class=" d-inline-block">
+                                            <div class="btn btn-info"><i class="fas fa-edit"></i></div>
+                                        </a>
+                                    </span>
+
+                                    <span>
+                                        @if ($post->estado == 'pending')
+                                            <span class=" d-inline-block">
+                                                <form action="{{ route('post.toogle', $post->id) }}" method="POST">
+                                                    @method('PUT')
+                                                    @csrf
+                                                    <button class="btn btn-secondary" data-toggle="tooltip"
+                                                        data-placement="top" title="Switch Publicado"><i
+                                                            class="fas fa-toggle-off"></i>
+                                                    </button>
+                                                </form>
+                                            </span>
+
+
+                                        @else
+                                            <span class="d-inline-block">
+                                                <form action="{{ route('post.toogle', $post->id) }}" method="POST">
+                                                    @method('PUT')
+                                                    @csrf
+                                                    <button class="btn btn-success" data-toggle="tooltip"
+                                                        data-placement="top" title="Switch Penditente"><i
+                                                            class="fas fa-toggle-on"></i>
+                                                    </button>
+                                                </form>
+                                            </span>
+                                        @endif
+
                                     </span>
                                 </td>
                             </tr>
@@ -123,6 +148,12 @@
     <script>
         $(document).ready(function() {
             $('#myTable').DataTable();
+        });
+
+        $(document).on('click', '#delete', function() {
+            let id = $(this).attr('data-id');
+            console.log('hola');
+            $('#post_id').val(id);
         });
 
     </script>

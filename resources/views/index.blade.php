@@ -200,7 +200,7 @@
                         </div>
                         <div class="section_subtitle">
                             <p>
-                                ¡PUEDES CONSULTAR GRATIS!
+                            <button type="button" class="calcular" value="send">CONSULTA GRATIS</button>
                             </p>
                         </div>
 
@@ -210,7 +210,7 @@
 
                 </div>
             </div>
-        </div>
+        
         <div class="slider-container d-md-none d-lg-block hidden-md hidden-sm d-sm-none d-none d-sm-block d-md-block"
             style="position: relative;height:auto">
             <div id="otro" style="height: 500px !important"> </div>
@@ -260,6 +260,7 @@
 
             </div>
 
+        </div>
         </div>
     </div>
     <!--Header End-->

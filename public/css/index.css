@@ -327,9 +327,9 @@ body {
 
 .social-media-links {
     height: 100vh;
-    position: absolute;
+    position: fixed;
     z-index: 2;
-    padding: 60px;
+    padding: 60px 7px;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -337,8 +337,8 @@ body {
     justify-content: center;
 }
 
-.social-media {
-    color: white;
+.social-media { 
+    color: #83c140;
     width: 25px;
     opacity: .6;
     margin: 8px;
@@ -443,7 +443,7 @@ body {
 
 .contact {
     display: flex;
-    position: absolute;
+    position: fixed;
     width: 7%;
     right: 0;
     top: 35%;

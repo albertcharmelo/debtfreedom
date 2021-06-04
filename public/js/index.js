@@ -100,6 +100,8 @@ $(function() {
         gsap.to('#breaker-two', 0, { display: "none", delay: 2 });
         gsap.to('#about', 0, { display: "block", delay: .7 });
         gsap.to('#navigation-content', 0, { display: 'flex', delay: 2 });
+        gsap.to('#features', 0, { display: 'none'});
+
     })
     $('#contact-link').on('click', function() {
         gsap.to('#navigation-content', 0, { display: "none", delay: .7 });
@@ -128,6 +130,8 @@ $(function() {
         gsap.to('#breaker-two', 0, { display: "none", delay: 2 });
         gsap.to('#portfolio', 0, { display: "block", delay: .7 });
         gsap.to('#navigation-content', 0, { display: 'flex', delay: 2 });
+        gsap.to('#features', 0, { display: 'none'});
+
     })
     $('#blog-link').on('click', function() {
         gsap.to('#navigation-content', 0, { display: "none", delay: .7 });
@@ -142,6 +146,8 @@ $(function() {
         gsap.to('#breaker-two', 0, { display: "none", delay: 2 });
         gsap.to('#blog', 0, { display: "block", delay: .7 });
         gsap.to('#navigation-content', 0, { display: 'flex', delay: 2 });
+        gsap.to('#features', 0, { display: 'none'});
+
     })
     $('#home-link').on('click', function() {
         gsap.to('#navigation-content', 0, { display: "none", delay: .7 });
@@ -157,6 +163,8 @@ $(function() {
         gsap.to('#breaker-two', 0, { display: "none", delay: 2 });
         gsap.to('#header', 0, { display: "block", delay: .7 });
         gsap.to('#navigation-content', 0, { display: 'flex', delay: 2 });
+        gsap.to('#features', 0, { display: 'block', delay: 2 });
+
     })
     $('#about-link2').on('click', function() {
         gsap.to('#navigation-content', 0, { display: "none", delay: .7 });
@@ -171,6 +179,8 @@ $(function() {
         gsap.to('#breaker-two', 0, { display: "none", delay: 2 });
         gsap.to('#about', 0, { display: "block", delay: .7 });
         gsap.to('#navigation-content', 0, { display: 'flex', delay: 2 });
+        gsap.to('#features', 0, { display: 'none'});
+
     })
     $('#contact-link2').on('click', function() {
         gsap.to('#navigation-content', 0, { display: "none", delay: .7 });
@@ -185,6 +195,8 @@ $(function() {
         gsap.to('#breaker-two', 0, { display: "none", delay: 2 });
         gsap.to('#contact', 0, { display: "block", delay: .7 });
         gsap.to('#navigation-content', 0, { display: 'flex', delay: 2 });
+        gsap.to('#features', 0, { display: 'none'});
+
     })
     $('#portfolio-link2').on('click', function() {
         gsap.to('#navigation-content', 0, { display: "none", delay: .7 });
@@ -199,6 +211,8 @@ $(function() {
         gsap.to('#breaker-two', 0, { display: "none", delay: 2 });
         gsap.to('#portfolio', 0, { display: "block", delay: .7 });
         gsap.to('#navigation-content', 0, { display: 'flex', delay: 2 });
+        gsap.to('#features', 0, { display: 'none'});
+
     })
     $('#blog-link2').on('click', function() {
         gsap.to('#navigation-content', 0, { display: "none", delay: .7 });
@@ -213,6 +227,8 @@ $(function() {
         gsap.to('#breaker-two', 0, { display: "none", delay: 2 });
         gsap.to('#blog', 0, { display: "block", delay: .7 });
         gsap.to('#navigation-content', 0, { display: 'flex', delay: 2 });
+        gsap.to('#features', 0, { display: 'none'});
+
     })
     $('#home-link2').on('click', function() {
         gsap.to('#navigation-content', 0, { display: "none", delay: .7 });
@@ -228,6 +244,8 @@ $(function() {
         gsap.to('#breaker-two', 0, { display: "none", delay: 2 });
         gsap.to('#header', 0, { display: "block", delay: .7 });
         gsap.to('#navigation-content', 0, { display: 'flex', delay: 2 });
+        gsap.to('#features', 0, { display: 'block', delay: 2 });
+
     })
 
 })

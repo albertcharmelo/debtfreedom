@@ -7,7 +7,9 @@
     </div>
     <div class="navbar-menu-wrapper d-flex align-items-center">
         <ul class="navbar-nav">
-            <li class="nav-item font-weight-semibold d-none d-lg-block">Help : +050 2992 709</li>
+            <li class="nav-item font-weight-semibold d-none d-lg-block">Help : +1 849 205 2792 <a
+                    href="https://www.vissionsolutions.com" class="ml-5">www.vissionsolutions.com</a></li>
+
         </ul>
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
             data-toggle="offcanvas">

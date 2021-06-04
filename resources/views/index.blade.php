@@ -15,11 +15,14 @@
     <!--main css file should not be removed -->
 
     <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/index_home.css"> 
+    <link rel="stylesheet" href="/css/index_home.css">
     <!--main css file-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+        integrity="undefined" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -112,9 +115,9 @@
                         <a href="Tel:+18008543030"><img src="images/call.png" alt="phone-pic" class="contactpic"></a>
                     </div>
                 </div>
-                
+
             </div>
-            
+
 
 
             <!--header image-->
@@ -125,80 +128,85 @@
         </main>
         <!-- Aqui va el contenido -->
         <div id="features">
-        <div class="features">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="section_title_container text-center">
-                            <h2 class="section_title">¿Qué y cómo lo hacemos?</h2>
-                            <div class="section_subtitle">
-                                <p>
-                                     Nuestros valores: <br /> 
-                                </p>
+            <div class="features">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="section_title_container text-center">
+                                <h2 class="section_title">¿Qué y cómo lo hacemos?</h2>
+                                <div class="section_subtitle">
+                                    <p>
+                                        Nuestros valores: <br />
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-        <div class="row features_row">
-            <!-- Features Item -->
-            <div data-aos="zoom-in" data-aos-duration="1000" class="col-sm-3 col-12 feature_col">
-                <div class="feature text-center trans_400">
-                    <div class="feature_icon">
-                        <i loading="lazy" class="fas fa-globe-americas" style="font-size: 60px; color: #39b54a"></i>
-                    </div>
-                    <h3 class="feature_title">Enfoque</h3>
-                    <div class="feature_text">
-                        <p>Debt Freedom USA se enfoca en la comunidad hispana de los Estados Unidos.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Features Item -->
-            <div data-aos="zoom-in" data-aos-duration="1500" class="col-sm-3 col-12 feature_col">
-                <div class="feature text-center trans_400">
-                    <div class="feature_icon">
-                        <i loading="lazy" class="far fa-compass" style="font-size: 60px; color: #39b54a"></i>
-                    </div>
-                    <h3 class="feature_title">Visión</h3>
-                    <div class="feature_text">
-                        <p>Debt Freedom USA tiene como visión ser la empresa lider en el mercado hispano para educarte financieramente.</p>
-                    </div>
-                </div>
-            </div>
+                    <div class="row features_row">
+                        <!-- Features Item -->
+                        <div data-aos="zoom-in" data-aos-duration="1000" class="col-sm-3 col-12 feature_col">
+                            <div class="feature text-center trans_400">
+                                <div class="feature_icon">
+                                    <i loading="lazy" class="fas fa-globe-americas"
+                                        style="font-size: 60px; color: #39b54a"></i>
+                                </div>
+                                <h3 class="feature_title">Enfoque</h3>
+                                <div class="feature_text">
+                                    <p>Debt Freedom USA se enfoca en la comunidad hispana de los Estados Unidos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Features Item -->
+                        <div data-aos="zoom-in" data-aos-duration="1500" class="col-sm-3 col-12 feature_col">
+                            <div class="feature text-center trans_400">
+                                <div class="feature_icon">
+                                    <i loading="lazy" class="far fa-compass"
+                                        style="font-size: 60px; color: #39b54a"></i>
+                                </div>
+                                <h3 class="feature_title">Visión</h3>
+                                <div class="feature_text">
+                                    <p>Debt Freedom USA tiene como visión ser la empresa lider en el mercado hispano
+                                        para educarte financieramente.</p>
+                                </div>
+                            </div>
+                        </div>
 
-            <!-- Features Item -->
-            <div data-aos="zoom-in" data-aos-duration="2000" class="col-sm-3 col-12 feature_col">
-                <div class="feature text-center trans_400">
-                    <div class="feature_icon">
-                        <i loading="lazy" class="far fa-heart" style="font-size: 60px; color: #39b54a"></i>
-                    </div>
-                    <h3 class="feature_title">Misión</h3>
-                    <div class="feature_text">
-                        <p>Debt Freedom USA trabaja arduamente para eliminar tus deudas de forma efécitva, satisfactoria y permanente.</p>
-                    </div>
-                </div>
-            </div>
+                        <!-- Features Item -->
+                        <div data-aos="zoom-in" data-aos-duration="2000" class="col-sm-3 col-12 feature_col">
+                            <div class="feature text-center trans_400">
+                                <div class="feature_icon">
+                                    <i loading="lazy" class="far fa-heart" style="font-size: 60px; color: #39b54a"></i>
+                                </div>
+                                <h3 class="feature_title">Misión</h3>
+                                <div class="feature_text">
+                                    <p>Debt Freedom USA trabaja arduamente para eliminar tus deudas de forma efécitva,
+                                        satisfactoria y permanente.</p>
+                                </div>
+                            </div>
+                        </div>
 
-            <!-- Features Item -->
-            <div data-aos="zoom-in" data-aos-duration="2500" class="col-sm-3 col-12 feature_col">
-                <div class="feature text-center trans_400">
-                    <div class="feature_icon">
-                        <i loading="lazy" class="fas fa-users" style="font-size: 60px; color: #39b54a"></i>
-                    </div>
-                    <h3 class="feature_title">Consulta</h3>
-                    <div class="feature_text">
-                        <p>Debt Freedom USA siempre estará de la mano contigo, puedes llamarnos o visitarnos.</p>
+                        <!-- Features Item -->
+                        <div data-aos="zoom-in" data-aos-duration="2500" class="col-sm-3 col-12 feature_col">
+                            <div class="feature text-center trans_400">
+                                <div class="feature_icon">
+                                    <i loading="lazy" class="fas fa-users" style="font-size: 60px; color: #39b54a"></i>
+                                </div>
+                                <h3 class="feature_title">Consulta</h3>
+                                <div class="feature_text">
+                                    <p>Debt Freedom USA siempre estará de la mano contigo, puedes llamarnos o
+                                        visitarnos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section_subtitle">
+                            <p>
+                                ¡PUEDES CONSULTAR GRATIS!
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="section_subtitle">
-                        <p>
-                            ¡PUEDES CONSULTAR GRATIS! 
-                        </p>
-             </div>
         </div>
-        </div>
-    </div>
-</div>
         <!--Header End-->
         <!--HomePage End-->
         <!--Main-Section End-->
@@ -537,7 +545,8 @@
     <script src="js/particles.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined"
+        crossorigin="anonymous"></script>
     <!--particles script-->
     <script>
         particlesJS("particles", {
@@ -652,7 +661,11 @@
         });
 
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
 
+    </script>
 
 </body>
 

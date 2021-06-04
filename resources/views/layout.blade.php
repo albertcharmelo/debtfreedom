@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/assets/css/shared/style.css">
     <link rel="stylesheet" href="/assets/css/demo_1/style.css">
     <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="/css/toastNotification/vanillatoasts.css">
     @yield('css')
 </head>
 
@@ -26,6 +27,10 @@
             @include('panel.partials.menu')
             <!-- partial -->
             <div class="main-panel">
+                @if (session('postSave'))
+                    <input type="hidden" value="{{ session('postSave') }}" id="postSave">
+
+                @endif
                 <div class="content-wrapper">
                     <!-- Page Title Header Starts (ejemplo.title-header)-->
 
@@ -45,45 +50,71 @@
 
         </div>
 
-
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="/assets/vendors/js/vendor.bundle.base.js"></script>
         <script src="/assets/vendors/js/vendor.bundle.addons.js"></script>
         <script src="/assets/js/shared/off-canvas.js"></script>
         <script src="/assets/js/shared/misc.js"></script>
         <script src="/assets/js/demo_1/dashboard.js"></script>
+        <script src="/js/toastNotification/vanillatoasts.js"></script>
+
         <script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/classic/ckeditor.js"></script>
         @yield('js')
         <script>
-            //agregar pugling al textarea
-            ClassicEditor.create(document.querySelector('#editor'))
-                .catch(error => {
-                    console.error(error);
-                });
+            $(document).ready(function() {
 
-            document.getElementById('filebutton').addEventListener('click', function() {
-                //hacer click en el input file oculto
-                $('#inputportada').click();
+
+
+                if (document.getElementById('postSave').value == 'guardado') {
+
+                    VanillaToasts.create({
+                        title: 'Debtfreedom',
+                        text: 'Artículo guardado satisfactoriamente',
+                        type: 'success',
+                        icon: '/images/notificaicón_icon.png',
+                        positionClass: 'bottomRight',
+                        timeout: 5000,
+
+                    });
+
+                } else if (document.getElementById('postSave').value == 'eliminado') {
+                    VanillaToasts.create({
+                        title: 'Debtfreedom',
+                        text: 'Artículo eliminado satisfactoriamente',
+                        type: 'danger',
+                        icon: '/images/notificaicón_icon.png',
+                        positionClass: 'bottomRight',
+                        timeout: 5000,
+
+                    });
+                } else if (document.getElementById('postSave').value == 'publicado') {
+                    VanillaToasts.create({
+                        title: 'Debtfreedom',
+                        text: 'Artículo publicado satisfactoriamente',
+                        type: 'info',
+                        icon: '/images/notificaicón_icon.png',
+                        positionClass: 'bottomRight',
+                        timeout: 5000,
+
+                    });
+                } else if (document.getElementById('postSave').value == 'pendiente') {
+                    VanillaToasts.create({
+                        title: 'Debtfreedom',
+                        text: 'Artículo se ha desactivado satisfactoriamente',
+                        type: 'info',
+                        icon: '/images/notificaicón_icon.png',
+                        positionClass: 'bottomRight',
+                        timeout: 5000,
+
+                    });
+                }
+
 
 
             });
-            document.getElementById('inputportada').addEventListener('change', function() {
-                //obtener nombre del documento
-                let fullPath = document.getElementById('inputportada').value;
-                var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath
-                    .lastIndexOf(
-                        '/'));
-                var filename = fullPath.substring(startIndex);
-                if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
-                    filename = filename.substring(1);
-                }
-                //agregar nombre al input text
-                document.getElementById('imagename').value = filename
-
-
-            })
 
         </script>
-
 
 </body>
 

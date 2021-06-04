@@ -72,7 +72,7 @@
                         title: 'Debtfreedom',
                         text: 'Artículo guardado satisfactoriamente',
                         type: 'success',
-                        icon: '/images/notificaicón_icon.png',
+                        icon: '/images/notifyicon.png',
                         positionClass: 'bottomRight',
                         timeout: 5000,
 
@@ -83,7 +83,7 @@
                         title: 'Debtfreedom',
                         text: 'Artículo eliminado satisfactoriamente',
                         type: 'danger',
-                        icon: '/images/notificaicón_icon.png',
+                        icon: '/images/notifyicon.png',
                         positionClass: 'bottomRight',
                         timeout: 5000,
 
@@ -93,7 +93,7 @@
                         title: 'Debtfreedom',
                         text: 'Artículo publicado satisfactoriamente',
                         type: 'info',
-                        icon: '/images/notificaicón_icon.png',
+                        icon: '/images/notifyicon.png',
                         positionClass: 'bottomRight',
                         timeout: 5000,
 
@@ -103,7 +103,7 @@
                         title: 'Debtfreedom',
                         text: 'Artículo se ha desactivado satisfactoriamente',
                         type: 'info',
-                        icon: '/images/notificaicón_icon.png',
+                        icon: '/images/notifyicon.png',
                         positionClass: 'bottomRight',
                         timeout: 5000,
 

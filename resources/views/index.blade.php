@@ -198,51 +198,65 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="section_subtitle">
+                            <p>
+                                ¡PUEDES CONSULTAR GRATIS!
+                            </p>
+                        </div>
+
 
                     </div>
+                    <!-- slider -->
+
                 </div>
             </div>
-            <div class="section_subtitle">
-                        <p>
-                        <button type="button"  class="calcular" value="send">CONSULTA GRATIS</button>
-                        </p>
-             </div>
-            <!-- slider -->
-            <div class="container-all">
+        </div>
+        <div class="slider-container d-md-none d-lg-block hidden-md hidden-sm d-sm-none d-none d-sm-block d-md-block"
+            style="position: relative;height:auto">
+            <div id="otro" style="height: 500px !important"> </div>
+            <div class="slider d-flex justify-content-center align-items-center  mt-5" style="height:auto">
+                <div class="container-all">
 
-                <input type="radio" id="1" name="image-slide" hidden />
-                <input type="radio" id="2" name="image-slide" hidden />
-                <input type="radio" id="3" name="image-slide" hidden />
+                    <input type="radio" id="1" name="image-slide" hidden />
+                    <input type="radio" id="2" name="image-slide" hidden />
+                    <input type="radio" id="3" name="image-slide" hidden />
 
-                <div class="slide">
+                    <div class="slide">
 
-                    <div class="item-slide">
-                        <img src="Images/img1.jpg">
+
+
+
+                        <div class="item-slide">
+                            <img src="Images/img1.jpg">
+                        </div>
+
+                        <div class="item-slide">
+                            <img src="Images/img2.jpg">
+                        </div>
+
+                        <div class="item-slide">
+                            <img src="Images/img3.jpg">
+                        </div>
+
                     </div>
 
-                    <div class="item-slide">
-                        <img src="Images/img2.jpg">
-                    </div>
+                    <div class="pagination">
 
-                    <div class="item-slide">
-                        <img src="Images/img3.jpg">
+                        <label class="pagination-item" for="1">
+                            <img src="Images/img1.jpg">
+                        </label>
+
+                        <label class="pagination-item" for="2">
+                            <img src="Images/img2.jpg">
+                        </label>
+
+                        <label class="pagination-item" for="3">
+                            <img src="Images/img3.jpg">
+                        </label>
+
                     </div>
                 </div>
-                <div class="pagination">
 
-                    <label class="pagination-item" for="1">
-                        <img src="Images/img1.jpg">
-                    </label>
-
-                    <label class="pagination-item" for="2">
-                        <img src="Images/img2.jpg">
-                    </label>
-
-                    <label class="pagination-item" for="3">
-                        <img src="Images/img3.jpg">
-                    </label>
-
-                </div>
             </div>
 
         </div>
@@ -589,6 +603,119 @@
         crossorigin="anonymous"></script>
     <!--particles script-->
     <script>
+        particlesJS("otro", {
+            "particles": {
+                "number": {
+                    "value": 40,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "window",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+
+
+
         particlesJS("particles", {
             "particles": {
                 "number": {

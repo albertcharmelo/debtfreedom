@@ -158,7 +158,7 @@ $(".submit").click(function() {
 })
 
 $('#finishBtn').click(function() {
-
+    const url = '/calculator/send'
     var data = {
         _token: _token,
         amount: localStorage.getItem('amount'),
@@ -169,14 +169,18 @@ $('#finishBtn').click(function() {
         email: document.getElementById('email').value,
         debt: $('input[name=radio]:checked', '#msform').val()
     }
+    if (document.getElementById('name').value && document.getElementById('email').value && document.getElementById('lname').value && document.getElementById('phone').value) {
 
-    const url = '/calculator/send'
+        document.getElementById('loader').classList.remove('d-none')
+        $('#formulario').hide()
+        $.post(url, data, function(resp) {
+
+            location.replace('/');
+        });
+    }
 
 
-    $.post(url, data, function(resp) {
 
-        location.replace('/');
-    });
 
 
 

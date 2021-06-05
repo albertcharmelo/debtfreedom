@@ -1,8 +1,11 @@
 <?php
 
+use App\Notifications\contactClient;
 use App\Post;
 use Facade\FlareClient\View;
 use Illuminate\Http\Request;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -10,7 +13,11 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return  view('index');
+
+    $posts = Post::where('estado', 'publish')->paginate(3);
+    // dd($posts);
+
+    return  view('index')->with(compact('posts'));
 })->name('index');
 
 Route::prefix('calculator')->group(function () {
@@ -20,14 +27,24 @@ Route::prefix('calculator')->group(function () {
     });
     Route::post('send', function (Request $request) {
 
+
+
+        Notification::route('mail', $request->email)->notify(new contactClient($request->name, $request->lname));
         return 'ok';
     });
 });
 
+Route::post('/get/posts', function () {
+    $posts = Post::where('estado', 'publish')->orderBy('created_at', 'DESC')->paginate(4);
+    return $posts;
+});
 Route::get('/blog/{id_show}', function ($id) {
     $post = Post::where('id_show', $id)->get()->first();
+    $newestPost = Post::where('estado', 'publish')->orderBy('created_at', 'DESC')->take(3)->get();
+    $MostVisitedPost = Post::where('estado', 'publish')->orderBy('visitas', 'DESC')->take(3)->get();
+
     if ($post->estado == 'publish') {
-        return view('blog.show')->with(compact('post'));
+        return view('blog.show')->with(compact('post', 'newestPost', 'MostVisitedPost'));
     } else {
         return redirect()->route('index');
     }

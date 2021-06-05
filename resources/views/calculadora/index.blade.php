@@ -17,11 +17,64 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css
     " />
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+        integrity="undefined" crossorigin="anonymous" />
     <link rel="stylesheet" href="{{ asset('css/form.css') }}">
     <link rel="icon" type="image/png" href="images/favicon.png">
-    
+    <style>
+        .loader {
+            animation: spin 1s infinite linear;
+            border: solid 2vmin transparent;
+            border-radius: 50%;
+            border-right-color: #5cb85c;
+            border-top-color: #5cb85c;
+            box-sizing: border-box;
+            height: 20vmin;
+            position: relative;
+            top: 90%;
+            left: 0;
+            width: 20vmin;
+            z-index: 1;
+        }
+
+        .loader:before {
+            animation: spin 2s infinite linear;
+            border: solid 2vmin transparent;
+            border-radius: 50%;
+            border-right-color: #54d354;
+            border-top-color: #54d354;
+            box-sizing: border-box;
+            content: "";
+            height: 16vmin;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 16vmin;
+        }
+
+        .loader:after {
+            animation: spin 3s infinite linear;
+            border: solid 2vmin transparent;
+            border-radius: 50%;
+            border-right-color: #53f453;
+            border-top-color: #53f453;
+            box-sizing: border-box;
+            content: "";
+            height: 12vmin;
+            left: 2vmin;
+            position: absolute;
+            top: 2vmin;
+            width: 12vmin;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
 </head>
 
 <body>
@@ -35,80 +88,81 @@
     </div>
     <!--Menubar End-->
     <section class=" multi_step_form">
-        <img src="/images/can-i-help-you.jpg" class="imagen"  alt="calculator_girl">
+        <img src="/images/can-i-help-you.jpg" class="imagen" alt="calculator_girl">
+
         <form id="msform">
-            <!-- Tittle -->
-            {{-- <div class="tittle">
-                <h2>Formulario MultiStep (TITULO)</h2>
-                <p>Cualquier descripcion que le quieras colocar al formulario</p>
-            </div> --}}
-            <!-- progressbar -->
+
             <ul id="progressbar">
                 <li class="active">Estado de Pagos</li>
                 <li>Ubicación</li>
                 <li>Contacto</li>
             </ul>
-            <!-- fieldsets -->
-            <fieldset>
-                <h3> ¿Esta atrásado en sus pagos?. </h3>
-                <h6>Porfavor, seleccione una opción.</h6>
+            <div class=" d-flex justify-content-center align-items-center d-none" style="width: 100%;position:relative"
+                id="loader">
+                <div class="loader" style="margin-top:6%"></div>
+            </div>
+            <div id="formulario">
+                <fieldset>
+                    <h3> ¿Esta atrásado en sus pagos?. </h3>
+                    <h6>Porfavor, seleccione una opción.</h6>
 
-                <div class="opciones mb-4">
-                    <label>
-                        <input type="radio" name="radio" value="1" checked />
-                        <span>Si,más de 60 días</span>
-                    </label>
-                    <label>
-                        <input type="radio" value="2" name="radio" />
-                        <span>Si,30 días o menos</span>
-                    </label>
-                    <label>
-                        <input type="radio" value='3' name="radio" />
-                        <span>No</span>
-                    </label>
-                </div>
-                <button type="button" class="next action-button">Continue</button>
-            </fieldset>
-            <fieldset>
-                <h3>Ubicación</h3>
-                <h6>Seleccione un estado</h6>
+                    <div class="opciones mb-4">
+                        <label>
+                            <input type="radio" name="radio" value="1" checked />
+                            <span>Si,más de 60 días</span>
+                        </label>
+                        <label>
+                            <input type="radio" value="2" name="radio" />
+                            <span>Si,30 días o menos</span>
+                        </label>
+                        <label>
+                            <input type="radio" value='3' name="radio" />
+                            <span>No</span>
+                        </label>
+                    </div>
+                    <button type="button" class="next action-button">Continue</button>
+                </fieldset>
+                <fieldset>
+                    <h3>Ubicación</h3>
+                    <h6>Seleccione un estado</h6>
 
-                <div class="form-group">
-                    <select class="product_select" id="state" style="margin-bottom: 20px">
+                    <div class="form-group">
+                        <select class="product_select" id="state" style="margin-bottom: 20px">
 
-                    </select>
-                </div>
+                        </select>
+                    </div>
 
-                <button type="button" class="action-button previous previous_button mt-5">
-                    Back
-                </button>
-                <button type="button" class="next action-button">Continue</button>
-            </fieldset>
-            <fieldset>
-                <h3>Datos de contacto</h3>
-                <h6>Ingrese sus datos para contactarnos con usted</h6>
+                    <button type="button" class="action-button previous previous_button mt-5">
+                        Back
+                    </button>
+                    <button type="button" class="next action-button">Continue</button>
+                </fieldset>
+                <fieldset>
+                    <h3>Datos de contacto</h3>
+                    <h6>Ingrese sus datos para contactarnos con usted</h6>
 
-                <div class="form-group">
-                    <input type="text " class="form-control" id="name" placeholder="Primer Nombre " />
-                </div>
-                <div class="form-group">
-                    <input type="text " class="form-control" id="lname" placeholder="Apellido" />
-                </div>
-                <div class="form-group">
-                    <input type="tel" class="form-control" style="padding-left:20px" id="phone"
-                        placeholder="Telefono" />
-                </div>
-                <div class="form-group">
-                    <input type="email " class="form-control" id="email" placeholder="Correo Electronico" />
-                </div>
+                    <div class="form-group">
+                        <input type="text " class="form-control" id="name" required placeholder="Primer Nombre " />
+                    </div>
+                    <div class="form-group">
+                        <input type="text " class="form-control" id="lname" required placeholder="Apellido" />
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" required style="padding-left:20px" id="phone"
+                            placeholder="Telefono" />
+                    </div>
+                    <div class="form-group">
+                        <input type="email " required class="form-control" id="email"
+                            placeholder="Correo Electronico" />
+                    </div>
 
-                <button type="button" class="action-button previous previous_button">
-                    Back
-                </button>
-                <a href="# " class="action-button" id="finishBtn"
-                    style="margin-bottom: 30px;margin-top: 30px">Finish</a>
-            </fieldset>
-
+                    <button type="button" class="action-button previous previous_button">
+                        Back
+                    </button>
+                    <a href="# " class="action-button" id="finishBtn"
+                        style="margin-bottom: 30px;margin-top: 30px">Finish</a>
+                </fieldset>
+            </div>
         </form>
     </section>
     <!-- /.MultiStep Form -->

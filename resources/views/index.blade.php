@@ -23,11 +23,169 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        button {
+            -webkit-appearance: none;
+            background: transparent;
+            border: 0;
+            outline: 0;
+        }
+
+        .paginacion {
+            position: relative;
+            height: auto;
+            min-height: 40px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+
+        }
+
+        .paginate {
+            position: relative;
+            margin: 10px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            transform: translate3d(0, 0, 0);
+            position: absolute;
+            top: 50%;
+            margin-top: -20px;
+            -webkit-filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.2));
+        }
+
+        .paginate i {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 20px;
+            height: 5px;
+            border-radius: 2.5px;
+            background: #fff;
+            transition: all 0.15s ease;
+        }
+
+        .paginate.left {
+            right: 58%;
+        }
+
+        .paginate.left i {
+            transform-origin: 0% 50%;
+        }
+
+        .paginate.left i:first-child {
+            transform: translate(0, -1px) rotate(40deg);
+        }
+
+        .paginate.left i:last-child {
+            transform: translate(0, 1px) rotate(-40deg);
+        }
+
+        .paginate.left:hover i:first-child {
+            transform: translate(0, -1px) rotate(30deg);
+        }
+
+        .paginate.left:hover i:last-child {
+            transform: translate(0, 1px) rotate(-30deg);
+        }
+
+        .paginate.left:active i:first-child {
+            transform: translate(1px, -1px) rotate(25deg);
+        }
+
+        .paginate.left:active i:last-child {
+            transform: translate(1px, 1px) rotate(-25deg);
+        }
+
+        .paginate.left[data-state="disabled"] i:first-child {
+            transform: translate(-5px, 0) rotate(0deg);
+        }
+
+        .paginate.left[data-state="disabled"] i:last-child {
+            transform: translate(-5px, 0) rotate(0deg);
+        }
+
+        .paginate.left[data-state="disabled"]:hover i:first-child {
+            transform: translate(-5px, 0) rotate(0deg);
+        }
+
+        .paginate.left[data-state="disabled"]:hover i:last-child {
+            transform: translate(-5px, 0) rotate(0deg);
+        }
+
+        .paginate.right {
+            left: 58%;
+        }
+
+        .paginate.right i {
+            transform-origin: 100% 50%;
+        }
+
+        .paginate.right i:first-child {
+            transform: translate(0, 1px) rotate(40deg);
+        }
+
+        .paginate.right i:last-child {
+            transform: translate(0, -1px) rotate(-40deg);
+        }
+
+        .paginate.right:hover i:first-child {
+            transform: translate(0, 1px) rotate(30deg);
+        }
+
+        .paginate.right:hover i:last-child {
+            transform: translate(0, -1px) rotate(-30deg);
+        }
+
+        .paginate.right:active i:first-child {
+            transform: translate(1px, 1px) rotate(25deg);
+        }
+
+        .paginate.right:active i:last-child {
+            transform: translate(1px, -1px) rotate(-25deg);
+        }
+
+        .paginate.right[data-state="disabled"] i:first-child {
+            transform: translate(5px, 0) rotate(0deg);
+        }
+
+        .paginate.right[data-state="disabled"] i:last-child {
+            transform: translate(5px, 0) rotate(0deg);
+        }
+
+        .paginate.right[data-state="disabled"]:hover i:first-child {
+            transform: translate(5px, 0) rotate(0deg);
+        }
+
+        .paginate.right[data-state="disabled"]:hover i:last-child {
+            transform: translate(5px, 0) rotate(0deg);
+        }
+
+        .paginate[data-state="disabled"] {
+            opacity: 0.3;
+            cursor: default;
+        }
+
+        .counter {
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            margin-top: -15px;
+            font-size: 30px;
+            font-family: Helvetica, sans-serif;
+            text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+            color: #fff;
+        }
+
+    </style>
 </head>
 
 <body>
+
     <!--contains all the div-->
     <div id="all">
+
+
         <!--mouse  follower-->
         <div class="cursor"></div>
         <!--mouse  follower-->
@@ -200,7 +358,7 @@
                         </div>
                         <div class="section_subtitle">
                             <p>
-                            <button type="button" class="calcular" value="send">CONSULTA GRATIS</button>
+                                <button type="button" class="calcular" value="send">CONSULTA GRATIS</button>
                             </p>
                         </div>
 
@@ -210,57 +368,57 @@
 
                 </div>
             </div>
-        
-        <div class="slider-container d-md-none d-lg-block hidden-md hidden-sm d-sm-none d-none d-sm-block d-md-block"
-            style="position: relative;height:auto">
-            <div id="otro" style="height: 500px !important"> </div>
-            <div class="slider d-flex justify-content-center align-items-center  mt-5" style="height:auto"
-                id="sliderContainer">
-                <div class="container-all">
 
-                    <input type="radio" id="1" name="image-slide" hidden />
-                    <input type="radio" id="2" name="image-slide" hidden />
-                    <input type="radio" id="3" name="image-slide" hidden />
+            <div class="slider-container d-md-none d-lg-block hidden-md hidden-sm d-sm-none d-none d-sm-block d-md-block"
+                style="position: relative;height:auto">
+                <div id="otro" style="height: 500px !important"> </div>
+                <div class="slider d-flex justify-content-center align-items-center  mt-5" style="height:auto"
+                    id="sliderContainer">
+                    <div class="container-all">
 
-                    <div class="slide">
+                        <input type="radio" id="1" name="image-slide" hidden />
+                        <input type="radio" id="2" name="image-slide" hidden />
+                        <input type="radio" id="3" name="image-slide" hidden />
 
-
+                        <div class="slide">
 
 
-                        <div class="item-slide">
-                            <img src="Images/img1.jpg">
+
+
+                            <div class="item-slide">
+                                <img src="Images/img1.jpg">
+                            </div>
+
+                            <div class="item-slide">
+                                <img src="Images/img2.jpg">
+                            </div>
+
+                            <div class="item-slide">
+                                <img src="Images/img3.jpg">
+                            </div>
+
                         </div>
 
-                        <div class="item-slide">
-                            <img src="Images/img2.jpg">
-                        </div>
+                        <div class="pagination">
 
-                        <div class="item-slide">
-                            <img src="Images/img3.jpg">
-                        </div>
+                            <label class="pagination-item" for="1">
+                                <img src="Images/img1.jpg">
+                            </label>
 
+                            <label class="pagination-item" for="2">
+                                <img src="Images/img2.jpg">
+                            </label>
+
+                            <label class="pagination-item" for="3">
+                                <img src="Images/img3.jpg">
+                            </label>
+
+                        </div>
                     </div>
 
-                    <div class="pagination">
-
-                        <label class="pagination-item" for="1">
-                            <img src="Images/img1.jpg">
-                        </label>
-
-                        <label class="pagination-item" for="2">
-                            <img src="Images/img2.jpg">
-                        </label>
-
-                        <label class="pagination-item" for="3">
-                            <img src="Images/img3.jpg">
-                        </label>
-
-                    </div>
                 </div>
 
             </div>
-
-        </div>
         </div>
     </div>
     <!--Header End-->
@@ -413,96 +571,34 @@
         <div class="blog-header"> Blogs</span>
             <span class="header-caption"> Nuestros últimos <span class="color"> artículos</span></span>
         </div>
-        <div class="blog-content">
-            <div class="blogs">
-                <a href="#">
-                    <div class="img">
-                        <img src="images/post-one.jpg" alt="blog-one">
-                        <div class="blog-date">10 Mayo,21</div>
-                    </div>
-                    <div class="blog-text">
-                        <h3>Consecuencias de deudas que no se pagan</h3>
-                        <p>Dejar una deuda en el olvido no es una opción buena para su historial de crédito. Pueden
-                            pasar los años. Y su récord se verá manchado por esa deuda del pasado. Hoy en día hay muchas
-                            soluciones y aquí le damos los mejores consejos.
-                            Ignorar el cobro de una deuda es un error fatal para el historial de crédito. Si usted no
-                            pude pagar esa deuda, hay entidades como Debt Freedom USA que le asesora de qué formas usted
-                            puede aliviar esta situación.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="blogs">
-                <a href="#">
-                    <div class="img">
-                        <img src="images/post-two.jpg" alt="blog-two">
-                        <div class="blog-date">28 Abril, 21</div>
-                    </div>
-                    <div class="blog-text">
-                        <h3>Deudas en el olvido</h3>
-                        <p>Ignorar el cobro de una deuda es un error fatal para el historial de crédito. Si usted no
-                            pude pagar esa deuda, hay entidades como Debt Freedom USA que le accesora de que formas
-                            usted puede aliviar esta situación.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="blogs">
-                <a href="#">
-                    <div class="img">
-                        <img src="images/post-three.jpg" alt="blog-three">
-                        <div class="blog-date">28 </div>
-                    </div>
-                    <div class="blog-text">
-                        <h3>Caffeine Addict</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo nostrum impedit ipsam
-                            perspiciatis ratione sapiente quasi optio reprehenderit, labore consequuntur suscipit cum
-                            quas. Officiis dolorem asperiores, ut necessitatibus
-                            quas doloremque?</p>
-                    </div>
-                </a>
-            </div>
-            <div class="blogs">
-                <a href="#">
-                    <div class="img">
-                        <img src="images/post-four.jpg" alt="blog-four">
-                        <div class="blog-date">6 Jul,19</div>
-                    </div>
-                    <div class="blog-text">
-                        <h3>Web Development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, veniam ratione quam vitae,
-                            quibusdam explicabo rem debitis velit ipsa repellat, impedit nulla fuga? Amet corporis
-                            praesentium quae. Sed, quibusdam necessitatibus.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="blogs">
-                <a href="#">
-                    <div class="img">
-                        <img src="images/post-five.jpg" alt="blog-five">
-                        <div class="blog-date">1 Jun,19</div>
-                    </div>
-                    <div class="blog-text">
-                        <h3>Work From Home</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt eum necessitatibus rem
-                            dignissimos nulla mollitia cumque, provident officiis non vitae? Animi aut doloremque illum,
-                            soluta hic minus sint explicabo..</p>
-                    </div>
-                </a>
-            </div>
-            <div class="blogs">
-                <a href="#">
-                    <div class="img">
-                        <img src="images/post-six.jpg" alt="blog-six">
-                        <div class="blog-date">28 Feb,19</div>
-                    </div>
-                    <div class="blog-text">
-                        <h3>Business Trip</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempora dolorum fuga
-                            ratione, unde, ex quaerat iste numquam nemo nihil nobis rem sint quia recusandae dignissimos
-                            quos ut rerum nam.</p>
-                    </div>
-                </a>
-            </div>
+        <div class="blog-content" id="blog-content">
+            @foreach ($posts as $post)
+                <div class="blogs">
+                    <a href="/blog/{{ $post->id_show }}">
+                        <div class="img">
+                            <img src="{{ $post->portada }}" alt="{{ $post->titulo }}">
+                            <div class="blog-date">{{ $post->created_at->format('d F, Y') }}</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>{!! $post->titulo !!}</h3>
+                            @if (Str::length(strip_tags($post->descripcion)) >= 300)
+                                <p>{{ Str::substr(strip_tags($post->descripcion), 0, 300) }}...</p>
+                            @else
+                                <p>{{ Str::substr(strip_tags($post->descripcion), 0, 300) }}</p>
+
+                            @endif
+
+                        </div>
+                    </a>
+                </div>
+            @endforeach
         </div>
+        <div class="paginacion">
+            <div class="counter"></div>
+            <button class="paginate left"><i></i><i></i></button>
+            <button class="paginate right"><i></i><i></i></button>
+        </div>
+
         <!--copyright-section You Can Remove After Downloading-->
         <div class="footer">
             <div class="footer-text">
@@ -598,6 +694,7 @@
         })
 
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/index.js"></script>
@@ -832,7 +929,135 @@
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        $(document).ready(function() {
+            var url = '/get/posts?page=' + 1;
+            var p = {
+                _token: _token
+            }
+            $.post(url, p, function(result) {
+                $('#blog-content').empty();
+                let fragment = document.createDocumentFragment();
+                for (const post of result.data) {
+                    let div1 = document.createElement('div');
+                    div1.classList.add('blogs');
+                    let a = document.createElement('a');
+                    a.setAttribute('href', `/blog/${post.id_show}`);
+                    div1.append(a);
+                    let div2 = document.createElement('div');
+                    div2.classList.add('img');
+                    let img = document.createElement('img');
+                    img.setAttribute('src', `${post.portada}`);
+                    img.setAttribute('alt', `${post.titulo}`);
+                    let div3 = document.createElement('div');
+                    div3.classList.add('blod-date');
+                    div3.textContent = moment(`${post.created_at}`).format('LL');
+                    div2.append(img);
+                    div2.append(div3);
+                    a.append(div2);
+                    let div4 = document.createElement('div');
+                    div4.classList.add('blog-text');
+                    let h3 = document.createElement('h3');
+                    h3.textContent = `${post.titulo}`
+                    let p = document.createElement('p');
+                    if (`${post.descripcion}`.length >= 300) {
+                        p.textContent = `${post.descripcion}`.replace(/(<([^>]+)>)/gi, "").substring(0,
+                                300) +
+                            "...";
+                    } else {
+                        p.textContent = `${post.descripcion}`.replace(/(<([^>]+)>)/gi, "").substring(0,
+                            300);
+
+                    }
+                    div4.append(h3)
+                    div4.append(p)
+                    a.append(div4)
+                    fragment.append(div1);
+
+
+
+
+
+
+                }
+                $('#blog-content').append(fragment);
+
+            });
+
+
+        });
         AOS.init();
+        // basic paging logic to demo the buttons
+        var pr = document.querySelector(".paginate.left");
+        var pl = document.querySelector(".paginate.right");
+        var _token = "{{ csrf_token() }}";
+        pr.onclick = slide.bind(this, -1);
+        pl.onclick = slide.bind(this, 1);
+
+        var index = 0,
+            total = "{{ $posts->lastPage() }}";
+
+        function slide(offset) {
+            index = Math.min(Math.max(index + offset, 0), total - 1);
+
+            document.querySelector(".counter").innerHTML = index + 1 + " / " + total;
+
+            pr.setAttribute("data-state", index === 0 ? "disabled" : "");
+            pl.setAttribute("data-state", index === total - 1 ? "disabled" : "");
+            console.log(index);
+            hola()
+        }
+
+        function hola() {
+
+            var url = '/get/posts?page=' + (index + 1);
+            var p = {
+                _token: _token
+            }
+            $.post(url, p, function(result) {
+                $('#blog-content').empty();
+                let fragment = document.createDocumentFragment();
+                for (const post of result.data) {
+                    let div1 = document.createElement('div');
+                    div1.classList.add('blogs');
+                    let a = document.createElement('a');
+                    a.setAttribute('href', `/blog/${post.id_show}`);
+                    div1.append(a);
+                    let div2 = document.createElement('div');
+                    div2.classList.add('img');
+                    let img = document.createElement('img');
+                    img.setAttribute('src', `${post.portada}`);
+                    img.setAttribute('alt', `${post.titulo}`);
+                    let div3 = document.createElement('div');
+                    div3.classList.add('blod-date');
+                    div3.textContent = moment(`${post.created_at}`).format('LL');
+                    div2.append(img);
+                    div2.append(div3);
+                    a.append(div2);
+                    let div4 = document.createElement('div');
+                    div4.classList.add('blog-text');
+                    let h3 = document.createElement('h3');
+                    h3.textContent = `${post.titulo}`
+                    let p = document.createElement('p');
+                    if (`${post.descripcion}`.length >= 300) {
+                        p.textContent = `${post.descripcion}`.replace(/(<([^>]+)>)/gi, "").substring(0, 300) +
+                            "...";
+                    } else {
+                        p.textContent = `${post.descripcion}`.replace(/(<([^>]+)>)/gi, "").substring(0, 300);
+
+                    }
+                    div4.append(h3)
+                    div4.append(p)
+                    a.append(div4)
+                    fragment.append(div1);
+                }
+                $(fragment).appendTo('#blog-content').hide().fadeIn(999);
+                // $('#blog-content').append(fragment).show('slow');
+
+            });
+
+
+        }
+        slide(0);
 
     </script>
 

@@ -18,15 +18,16 @@ class PostController extends Controller
 
     static public function createPost(Request $request)
     {
+        $filename = time() . '.' . request()->img->getClientOriginalExtension();
+        request()->img->move(public_path('blog'), $filename);
 
-        $path = '/blog/portadas/' . $request->imagennombre;
+        $path = '/blog/' . $filename;
 
 
 
         DB::beginTransaction();
 
         try {
-
             $newpost = DB::table('t_posts')->insertGetId([
                 'titulo' => $request->titulo,
                 'descripcion' => $request->descripcion,

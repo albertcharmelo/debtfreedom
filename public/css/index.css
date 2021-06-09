@@ -539,9 +539,7 @@ body {
 }
 
 #about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
     color: whitesmoke;
     justify-content: center;
     height: auto;
@@ -588,30 +586,29 @@ body {
 .about-second-line {
     opacity: .8;
     font-size: 18px;
-    font-weight: 200;
+
 }
 
 .about-main {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     width: 100vw;
     height: auto;
     padding-left: 50px;
     padding-right: 50px;
-    flex-direction: row;
 }
 
 .about-img img {
-    width: 100%;
-    height: 380px;
+    width: 70%;
+    height: auto;
     padding: 30px;
     border-radius: 40px;
+
 }
 
 .about-img {
-    width: 550px;
-    height: auto;
+
     padding: 30px;
     padding-top: 10px;
     border-radius: 40px;
@@ -1638,8 +1635,8 @@ For devices with smaller width like mobile phone
         flex-direction: column-reverse;
     }
     .about-img img {
-        width: 280px;
-        height: 220px;
+        width: 70%;
+        height: auto;
         padding: 5px;
         border-radius: 10%;
     }
@@ -2104,13 +2101,13 @@ for tabs and large phones
         flex-direction: column-reverse;
     }
     .about-img img {
-        width: 100%;
-        height: 380px;
+        width: 70%;
+        height: auto;
         padding: 30px;
         border-radius: 40px;
     }
     .about-img {
-        width: 550px;
+
         height: auto;
         padding: 30px;
         padding-top: 10px;
@@ -2447,15 +2444,15 @@ for tabs and large phones
         width: 40%;
     }
     .about-img img {
-        width: 100%;
-        height: 450px;
+        width: 70%;
+        height: auto;
         padding: 30px;
         border-radius: 40px;
         animation: opacity 1.4s ease;
     }
     .about-img {
         width: 40%;
-        height: 450px;
+
         padding: 30px;
         border-radius: 40px;
     }
@@ -2738,17 +2735,19 @@ for tabs and large phones
         width: 40%;
     }
     .about-img img {
-        width: 100%;
-        height: 450px;
+        width: 70%;
+        height: auto;
         padding: 30px;
         border-radius: 40px;
         animation: opacity 1.4s ease;
+        justify-content: flex-end;
+  
     }
     .about-img {
-        width: 40%;
-        height: 450px;
         padding: 30px;
         border-radius: 40px;
+        display: flex;
+  
     }
     .about-first-line {
         font-size: 45px;

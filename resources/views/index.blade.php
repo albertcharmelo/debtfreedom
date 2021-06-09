@@ -419,6 +419,32 @@
                 </div>
 
             </div>
+                <!--Contact form-->
+                <!-- <div class="contact-form_home">
+                    <div class="form-header_home">
+                        ¿Dudas?
+                    </div>
+                    <form id="myForm_home" action="#">
+                        <div class="input-line">
+                            <input id="name_home" type="text" placeholder="Nombre" class="input-name_home">
+                            <input id="email_home" type="email" placeholder="Email" class="input-name">
+                        </div>
+                        <input type="text" id="subject_home" placeholder="Asunto" class="input-subject_home">
+                        <textarea id="body_home" class="input-textarea" placeholder="Mensaje"></textarea>
+                        <button type="button" id="submit_home" value="send">Enviar</button>
+                    </form>
+
+                </div> -->
+                <!--Contact form-->
+                <div class="home_end">
+                            <p>
+                            ¿Tienes dudas? No te preocupes puedes consultarnos GRATIS aquí
+                            </p>
+                        </div>
+
+
+            
+        </div>
         </div>
     </div>
     <!--Header End-->
@@ -438,7 +464,7 @@
                     <!--about description-->
                     <span class="about-first-line">
 
-                        <span class="color">Con más de 11 años</span> en el mercado hispano, nuestros principales
+                        <!-- <span class="color">Con más de 11 años</span> en el mercado hispano, nuestros principales
                         servicios son:
                         <br>
                         <ul style="list-style: none;">
@@ -449,7 +475,7 @@
                             <li style="font-size: 60%; color: #83c140; text-decoration: none;">Negociación de deudas
                             </li>
                         </ul>
-                    </span>
+                    </span> -->
 
                     <br>
                     <span class="about-second-line">Nuestro éxito ayudando a las personas a salir de sus deudas y a
@@ -464,13 +490,102 @@
                     <div class="cv">
                         <a href="#"><button>CONTÁCTANOS <span class="colors">AHORA</span></button></a>
                     </div>
+                    
                 </div>
                 <!--about picture-->
                 <div class="about-img">
                     <img src="images/about.jpg" alt="Your Image">
                 </div>
+                
             </div>
+            <div class="feature_background" style="background-image:url({{asset('img/brand/team_background.jpg')}})"></div>
+<div class="container_aboutus">
+    <div class="row">
+        <div class="col">
+            <div class="section_title_container text-center">
+                <h2 class="section_title">
+                    ¿Por qué <span style="color: #14bdee">Atriux</span>?
+                </h2>
+                <div class="section_subtitle">
+                    <p>
+                        Nuestras elecciones definen una ruta en nuestra vida. En Atriux te damos la información que necesitas para tomar la desición de escogernos
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row feature_row">
+        <!-- Feature Content -->
+        <div class="col-lg-6 feature_col">
+            <div class="feature_content">
+                <!-- Accordions -->
+                <div class="accordions">
+                    <div class="elements_accordions">
+                        <div class="accordion_container">
+                            <div class="accordion d-flex flex-row align-items-center">
+                                <div>Porque deberias escogernos?</div>
+                            </div>
+                            <div class="accordion_panel">
+                                <p>
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
 
+                        <div class="accordion_container">
+                            <div class="accordion d-flex flex-row align-items-center active">
+                                <div>Que te ofrecemos?</div>
+                            </div>
+                            <div class="accordion_panel">
+                                <p>
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion_container">
+                            <div class="accordion d-flex flex-row align-items-center">
+                                <div>Necesito invertir mucho dinero?</div>
+                            </div>
+                            <div class="accordion_panel">
+                                <p>
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion_container">
+                            <div class="accordion d-flex flex-row align-items-center">
+                                <div>En cuanto tiempo veré resultados?</div>
+                            </div>
+                            <div class="accordion_panel">
+                                <p>
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordions End -->
+            </div>
+        </div>
+
+        <!-- Feature Video -->
+        <div class="col-lg-6 feature_col">
+            <div class="
+          feature_video
+          d-flex
+          flex-column
+          align-items-center
+          justify-content-center
+        ">
+                <div class="feature_video_background"></div>
+
+                <img style="width: 620px; heigth: 450px" src="{{asset('img/brand/about 5.jpg')}}" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
         </div>
 
         <!--copyright-section You Can Remove After Downloading-->

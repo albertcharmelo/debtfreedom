@@ -20,6 +20,13 @@ Route::get('/', function () {
     return  view('index')->with(compact('posts'));
 })->name('index');
 
+Route::get('/terms',function(){
+    return view('terms');
+});
+Route::get('/privacy',function(){
+
+    return view('privacy');
+});
 Route::prefix('calculator')->group(function () {
 
     Route::get('/', function () {

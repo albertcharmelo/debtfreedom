@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Colorlib Wordify &mdash; Minimal Blog Template</title>
+    <title>Blog &mdash; Blog </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 

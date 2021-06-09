@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    color: #83c140;
+    transition: all .4s ease;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #83c140;
+    border-radius: 4px;
+    width: 4px;
+    transition: all .4s ease;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #101010;
+    border-radius: 4px;
+    width: 4px;
+}
+
+body {
+    background-color: #273f95;
+    font-family: "roboto";    
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.9;
+    color: hsl(208, 7%, 46%);
+}
+
+
+.terms {
+    color:white;
+    display: block;
+    padding: 5% 5% 0 5%; 
+}
+
+.terms h2 {
+    text-align: center;
+}
+
+.nav-new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-new a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: roboto; 
+    font-size: 80%;
+    transition: all .4s ease
+}
+
+.nav-new-a {
+    opacity: .6;
+}
+
+.nav-new a:hover {
+    opacity: 50;
+}
+
+.nav-new img {
+    height: 80px;
+    opacity: .8;
+    transition: all .4s ease;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer {
+    background: #333641;
+    width: 100%;
+    padding: 10px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    font-family: roboto;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .footer-text {
+    position: relative;
+    display: inline;
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 1;
+}
+
+.back_home {
+    display: ;
+}
+
+.back_home button {
+    background: transparent;
+    border: none;
+    padding: 5px 15px;
+    color: whitesmoke;
+    background: #83c140;
+    outline: none;
+    font-size: 20px;
+    font-family: "roboto"; 
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: all .4s ease;
+}
+
+.back_home button:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.back_home {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 5% 0;
+}

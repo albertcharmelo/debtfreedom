@@ -1,40 +1,78 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<!doctype html>
+<html lang="en">
 
 <head>
+    <title>Terms &mdash; Terms </title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Debt Freedom | USA</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300, 400,700|Inconsolata:400,700" rel="stylesheet">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    {{-- <link rel="stylesheet" href="css/index.css"> --}}
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.2/css/intlTelInput.css" />
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css
-    " />
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous" />
-    <link rel="stylesheet" href="{{ asset('css/form.css') }}">
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    
-</head>
+    <link rel="stylesheet" href="/fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/fonts/flaticon/font/flaticon.css">
 
+    <style>
+        #navigation-bar {
+            position: relative;
+            height: 100px;
+            width: 100%;
+            z-index: 3;
+            padding: 10px;
+            background-color: #273f95;
+            overflow: hidden;
+        }
+        #navigation-bar img {
+            height: 80px;
+            position: absolute;
+            top: 15%;
+            left: 2.5%;
+            opacity: .8;
+            transition: all .4s ease;
+        }
+
+        #navigation-bar img:hover {
+            opacity: 50;
+        }
+
+        #otro {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+        }
+    </style>
+    <!-- terms style -->
+<link rel="stylesheet" href="/css/terms.css">
+   <header>
+        <div id="navigation-bar">
+            <div class="nav-new">
+                <a href="/">
+                    <img src="./images/debtfreedom_logo.png" alt="logo">
+                </a>
+                <!-- <a href="#" class="nav-new-a" id="home-link2">INICIO</a>
+                <a href="#" class="nav-new-a" id="about-link2">NOSOTROS</a>
+                <a href="#" class="nav-new-a" id="portfolio-link2">SERVICIOS</a>
+                <a href="#" class="nav-new-a" id="contact-link2">CONTACTO</a>
+                <a href="#" class="nav-new-a" id="blog-link2">BLOG</a> -->
+            </div>
+            <div class="menubar">
+                <span class="first-span"></span>
+                <span class="second-span"></span>
+                <span class="third-span"></span>
+            </div>
+        </div>
+        <!--Menubar End-->
+    </header>
+    <div id="otro" class="otro"></div>
 <body>
-    <div id="particles"></div>
-    <!--Menubar-->
-    <div id="navigation-bar">
-        <a href="/">
-            <img src="./images/debtfreedom_logo.png" alt="logo">
-        </a>
-    </div>
-    <!--Menubar End-->
-    <!-- text for privacy -->
-    <section class="terms">
+    <!-- privacy section -->
+<section class="terms">
     <h1>Privacy Policy for debtfreedom usa</h1>
 
 <p>At debtfreedom-usa, accessible from www.debtfreedom-usa.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by debtfreedom-usa and how we use it.</p>
@@ -96,6 +134,20 @@
 
     </section>
       <!-- end of text for privacy -->
+
+<div class="back_home">
+    <button type="button" class="back_home_buttom" href="/" >Regresar</button>
+</div>
+
+<footer class="footer">
+            <div class="footer-text">
+                <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Vission
+                Solutions
+            </div>
+</footer>
+
+
+</body>
     
     
     
@@ -229,3 +281,6 @@
 </body>
 
 </html>
+
+    
+  

@@ -173,6 +173,7 @@ $('#finishBtn').click(function() {
 
         document.getElementById('loader').classList.remove('d-none')
         $('#formulario').hide()
+            // console.log(data);
         $.post(url, data, function(resp) {
 
             location.replace('/');

@@ -337,7 +337,7 @@ body {
     justify-content: center;
 }
 
-.social-media { 
+.social-media {
     color: #83c140;
     width: 25px;
     opacity: .6;
@@ -363,17 +363,17 @@ body {
     opacity: 50;
 }
 
-.nav-new{
+.nav-new {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nav-new a{
+.nav-new a {
     padding: 10px;
     color: white;
     text-decoration: none;
-    font-family: roboto; 
+    font-family: roboto;
     font-size: 80%;
     transition: all .4s ease
 }
@@ -539,7 +539,6 @@ body {
 }
 
 #about-content {
-
     color: whitesmoke;
     justify-content: center;
     height: auto;
@@ -585,8 +584,8 @@ body {
 
 .about-second-line {
     opacity: .8;
-    font-size: 18px;
-
+    font-size: 38px;
+    text-align: justify;
 }
 
 .about-main {
@@ -604,11 +603,9 @@ body {
     height: auto;
     padding: 30px;
     border-radius: 40px;
-
 }
 
 .about-img {
-
     padding: 30px;
     padding-top: 10px;
     border-radius: 40px;
@@ -1498,7 +1495,6 @@ For devices with smaller width like mobile phone
 */
 
 @media only screen and (max-width: 550px) {
-
     .nav-new-a {
         opacity: 0;
     }
@@ -2107,7 +2103,6 @@ for tabs and large phones
         border-radius: 40px;
     }
     .about-img {
-
         height: auto;
         padding: 30px;
         padding-top: 10px;
@@ -2452,7 +2447,6 @@ for tabs and large phones
     }
     .about-img {
         width: 40%;
-
         padding: 30px;
         border-radius: 40px;
     }
@@ -2741,13 +2735,11 @@ for tabs and large phones
         border-radius: 40px;
         animation: opacity 1.4s ease;
         justify-content: flex-end;
-  
     }
     .about-img {
         padding: 30px;
         border-radius: 40px;
         display: flex;
-  
     }
     .about-first-line {
         font-size: 45px;

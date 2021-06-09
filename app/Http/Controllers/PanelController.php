@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use stdClass;
+use App\Mail\ContactInfo;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class PanelController extends Controller
 {
@@ -10,5 +13,9 @@ class PanelController extends Controller
     {
 
         return view('panel.index');
+    }
+
+    static public function MailCcontacto(Request $request)
+    {
     }
 }

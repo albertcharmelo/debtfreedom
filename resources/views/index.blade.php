@@ -17,12 +17,13 @@
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/index_home.css">
     <!--main css file-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-        integrity="undefined" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="{{ asset('css/font-awesome-4.7.0/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/fontawasome.css') }}">
+    <script src="{{ asset('js/fontawesome.js') }}"></script>
     <style>
         button {
             -webkit-appearance: none;
@@ -51,6 +52,22 @@
             top: 50%;
             margin-top: -20px;
             -webkit-filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.2));
+        }
+
+        .cv a button {
+            background: transparent;
+            border: none;
+            padding: 15px 30px;
+            color: whitesmoke;
+            background: #83c140;
+            outline: none;
+            font-size: 20px;
+            font-family: aileron;
+            border-radius: 4px;
+            font-weight: 400;
+            cursor: pointer;
+            position: relative;
+            transition: all .4s ease;
         }
 
         .paginate i {
@@ -175,6 +192,148 @@
             font-family: Helvetica, sans-serif;
             text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
             color: #fff;
+        }
+
+        /*********************************
+8. Feature
+*********************************/
+
+        .feature {
+            width: 100%;
+            padding-top: 93px;
+            padding-bottom: 100px;
+        }
+
+
+
+        .feature_row {
+            margin-top: 72px;
+        }
+
+        .feature_content {
+            padding-right: 54px;
+        }
+
+        .elements_accordions {}
+
+        .accordion_container {
+            background: #FFFFFF;
+            border-radius: 6px;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 13px;
+            padding-bottom: 4px;
+        }
+
+        .accordion_container:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .accordion {
+            width: 100%;
+            padding-left: 27px;
+            cursor: pointer;
+            color: #000000;
+            font-size: 14px;
+            font-weight: 500;
+            -webkit-transition: all 200ms ease;
+            -moz-transition: all 200ms ease;
+            -ms-transition: all 200ms ease;
+            -o-transition: all 200ms ease;
+            transition: all 200ms ease;
+        }
+
+        .accordion div {
+            max-width: 90%;
+            overflow: hidden;
+            white-space: nowrap;
+            font-family: 'Roboto Slab', serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #384158;
+        }
+
+        .accordion::before {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: -1px;
+            left: 0;
+            height: 100%;
+            font-family: 'FontAwesome';
+            content: '\f105';
+            font-size: 24px;
+            color: #384158;
+            font-weight: 400;
+            -webkit-transition: all 200ms ease;
+            -moz-transition: all 200ms ease;
+            -ms-transition: all 200ms ease;
+            -o-transition: all 200ms ease;
+            transition: all 200ms ease;
+        }
+
+        .accordion.active::before {
+            content: '\f107';
+            color: #14bdee;
+        }
+
+        .accordion_panel {
+            padding-right: 8px;
+            padding-left: 30px;
+            padding-top: 9px;
+            max-height: 0px;
+            overflow: hidden;
+            -webkit-transition: all 500ms ease;
+            -moz-transition: all 500ms ease;
+            -ms-transition: all 500ms ease;
+            -o-transition: all 500ms ease;
+            transition: all 500ms ease;
+        }
+
+        .accordion.active+.accordion_panel {
+            margin-bottom: 20px;
+        }
+
+        .accordion_panel p {
+            font-size: 14px;
+            font-weight: 400;
+            color: #76777a;
+            line-height: 2;
+        }
+
+        .feature_video {
+            width: calc(100% + 15px);
+            left: -15px;
+            height: 363px;
+            margin-top: -4px;
+        }
+
+        .feature_video_background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            border-radius: 6px;
+        }
+
+        .feature_video_button {
+            display: block;
+            width: 60px;
+            height: 60px;
+            z-index: 10;
+            outline: none;
         }
 
     </style>
@@ -419,8 +578,8 @@
                 </div>
 
             </div>
-                <!--Contact form-->
-                <!-- <div class="contact-form_home">
+            <!--Contact form-->
+            <!-- <div class="contact-form_home">
                     <div class="form-header_home">
                         ¿Dudas?
                     </div>
@@ -435,17 +594,17 @@
                     </form>
 
                 </div> -->
-                <!--Contact form-->
-                <div class="home_end">
-                            <p>
-                            ¿Tienes dudas? No te preocupes puedes consultarnos GRATIS aquí
-                            </p>
-                        </div>
+            <!--Contact form-->
+            <div class="home_end">
+                <p>
+                    ¿Tienes dudas? No te preocupes puedes consultarnos GRATIS aquí
+                </p>
+            </div>
 
 
-            
+
         </div>
-        </div>
+    </div>
     </div>
     <!--Header End-->
     <!--HomePage End-->
@@ -459,12 +618,12 @@
                 Sobre <span class="color">Nosotros</span>
                 <span class="header-caption">Team Debt<span class="color">Freedom</span></span>
             </div>
-            <div class="about-main">
-                <div class="about-first-paragraph wow">
+            <div class="about-main row mb-5">
+                <div class="about-first-paragraph wow col-7">
                     <!--about description-->
-                    <span class="about-first-line">
+                    {{-- <span class="about-first-line">
 
-                        <!-- <span class="color">Con más de 11 años</span> en el mercado hispano, nuestros principales
+                        <span class="color">Con más de 11 años</span> en el mercado hispano, nuestros principales
                         servicios son:
                         <br>
                         <ul style="list-style: none;">
@@ -475,117 +634,121 @@
                             <li style="font-size: 60%; color: #83c140; text-decoration: none;">Negociación de deudas
                             </li>
                         </ul>
-                    </span> -->
+                    </span> --}}
 
                     <br>
-                    <span class="about-second-line">Nuestro éxito ayudando a las personas a salir de sus deudas y a
+                    <span class="about-second-line text-justify">Nuestro éxito ayudando a las personas a salir de sus
+                        deudas y a
                         reparar su valoración de crédito de forma permanente, lo debemos a nuestra amplia
                         experiencia para identificar de forma rápida y efectiva, las mejores soluciones para las
                         necesidades financieras de nuestros clientes.</span>
                     <br>
-                    <span class="about-second-line">Descubra cómo nuestras soluciones de administración de deuda
+                    <span class="about-second-line text-justify">Descubra cómo nuestras soluciones de administración de
+                        deuda
                         pueden ayudarlo.
                         Hemos ayudado de forma sostenible y viable a miles de personas a liberarse de sus deudas y
                         mejorar su crédito de forma permanente, sin necesidad de declararse en bancarrota.</span>
                     <div class="cv">
                         <a href="#"><button>CONTÁCTANOS <span class="colors">AHORA</span></button></a>
                     </div>
-                    
+
                 </div>
                 <!--about picture-->
-                <div class="about-img">
-                    <img src="images/about.jpg" alt="Your Image">
+                <div class="about-img col-5 col-xs-12">
+                    <img src="/images/about.jpg" alt="Your Image">
                 </div>
-                
+
             </div>
-            <div class="feature_background" style="background-image:url({{asset('img/brand/team_background.jpg')}})"></div>
-<div class="container_aboutus">
-    <div class="row">
-        <div class="col">
-            <div class="section_title_container text-center">
-                <h2 class="section_title">
-                    ¿Por qué <span style="color: #14bdee">Atriux</span>?
-                </h2>
-                <div class="section_subtitle">
-                    <p>
-                        Nuestras elecciones definen una ruta en nuestra vida. En Atriux te damos la información que necesitas para tomar la desición de escogernos
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row feature_row">
-        <!-- Feature Content -->
-        <div class="col-lg-6 feature_col">
-            <div class="feature_content">
-                <!-- Accordions -->
-                <div class="accordions">
-                    <div class="elements_accordions">
-                        <div class="accordion_container">
-                            <div class="accordion d-flex flex-row align-items-center">
-                                <div>Porque deberias escogernos?</div>
-                            </div>
-                            <div class="accordion_panel">
-                                <p>
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                </p>
-                            </div>
-                        </div>
 
-                        <div class="accordion_container">
-                            <div class="accordion d-flex flex-row align-items-center active">
-                                <div>Que te ofrecemos?</div>
-                            </div>
-                            <div class="accordion_panel">
+            <div class="container_aboutus">
+                <div class="row">
+                    <div class="col">
+                        <div class="section_title_container text-center">
+                            <h2 class="section_title">
+                                ¿Por qué <span style="color: #14bdee">Atriux</span>?
+                            </h2>
+                            <div class="section_subtitle">
                                 <p>
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="accordion_container">
-                            <div class="accordion d-flex flex-row align-items-center">
-                                <div>Necesito invertir mucho dinero?</div>
-                            </div>
-                            <div class="accordion_panel">
-                                <p>
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="accordion_container">
-                            <div class="accordion d-flex flex-row align-items-center">
-                                <div>En cuanto tiempo veré resultados?</div>
-                            </div>
-                            <div class="accordion_panel">
-                                <p>
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    Nuestras elecciones definen una ruta en nuestra vida. En Atriux te damos la
+                                    información que necesitas para tomar la desición de escogernos
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Accordions End -->
-            </div>
-        </div>
+                <div class="row feature_row">
+                    <!-- Feature Content -->
+                    <div class="col-lg-6 feature_col">
+                        <div class="feature_content">
+                            <!-- Accordions -->
+                            <div class="accordions">
+                                <div class="elements_accordions">
+                                    <div class="accordion_container">
+                                        <div class="accordion d-flex flex-row align-items-center">
+                                            <div>Porque deberias escogernos?</div>
+                                        </div>
+                                        <div class="accordion_panel">
+                                            <p>
+                                                Lorem Ipsum has been the industry's standard dummy text ever since the
+                                                1500s, when an unknown printer took a galley of type and scrambled it to
+                                                make a type specimen book.
+                                            </p>
+                                        </div>
+                                    </div>
 
-        <!-- Feature Video -->
-        <div class="col-lg-6 feature_col">
-            <div class="
-          feature_video
-          d-flex
-          flex-column
-          align-items-center
-          justify-content-center
-        ">
-                <div class="feature_video_background"></div>
+                                    <div class="accordion_container">
+                                        <div class="accordion d-flex flex-row align-items-center active">
+                                            <div>Que te ofrecemos?</div>
+                                        </div>
+                                        <div class="accordion_panel">
+                                            <p>
+                                                Lorem Ipsum has been the industry's standard dummy text ever since the
+                                                1500s, when an unknown printer took a galley of type and scrambled it to
+                                                make a type specimen book.
+                                            </p>
+                                        </div>
+                                    </div>
 
-                <img style="width: 620px; heigth: 450px" src="{{asset('img/brand/about 5.jpg')}}" alt="" />
+                                    <div class="accordion_container">
+                                        <div class="accordion d-flex flex-row align-items-center">
+                                            <div>Necesito invertir mucho dinero?</div>
+                                        </div>
+                                        <div class="accordion_panel">
+                                            <p>
+                                                Lorem Ipsum has been the industry's standard dummy text ever since the
+                                                1500s, when an unknown printer took a galley of type and scrambled it to
+                                                make a type specimen book.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion_container">
+                                        <div class="accordion d-flex flex-row align-items-center">
+                                            <div>En cuanto tiempo veré resultados?</div>
+                                        </div>
+                                        <div class="accordion_panel">
+                                            <p>
+                                                Lorem Ipsum has been the industry's standard dummy text ever since the
+                                                1500s, when an unknown printer took a galley of type and scrambled it to
+                                                make a type specimen book.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordions End -->
+                        </div>
+                    </div>
+
+                    <!-- Feature Video -->
+                    <div class="col-lg-6 feature_col">
+                        <div class=" d-flex flex-column align-items-center justify-content-center">
+                            <img style="width: 620px; heigth: 450px" src="{{ asset('img/brand/about 5.jpg') }}"
+                                alt="" />
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
         </div>
 
         <!--copyright-section You Can Remove After Downloading-->
@@ -813,8 +976,7 @@
     <script src="js/particles.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
     <!--particles script-->
     <script>
         particlesJS("otro", {
@@ -1175,7 +1337,107 @@
         slide(0);
 
     </script>
+    <script>
+        /* JS Document */
 
+        /******************************
+
+        [Table of Contents]
+
+        1. Vars and Inits
+        2. Set Header
+        3. Init Menu
+        4. Init Header Search
+        5. Init Accordions
+        6. Init Video
+        7. Initialize Milestones
+        8. Init Partners Slider
+
+
+        ******************************/
+
+        $(document).ready(function() {
+            "use strict";
+
+            /* 
+
+            1. Vars and Inits
+
+            */
+
+            ;
+            // var menuActive = false;
+            // var menu = $('.menu');
+            // var burger = $('.hamburger');
+            // var ctrl = new ScrollMagic.Controller();
+
+
+
+
+            initAccordions();
+
+
+
+            /* 
+
+            6. Init Accordions
+
+            */
+
+            function initAccordions() {
+                if ($('.accordion').length) {
+                    var accs = $('.accordion');
+
+                    accs.each(function() {
+                        var acc = $(this);
+
+                        if (acc.hasClass('active')) {
+                            var panel = $(acc.next());
+                            var panelH = panel.prop('scrollHeight') + "px";
+
+                            if (panel.css('max-height') == "0px") {
+                                panel.css('max-height', panel.prop('scrollHeight') + "px");
+                            } else {
+                                panel.css('max-height', "0px");
+                            }
+                            $(window).trigger('resize.px.parallax');
+                        }
+
+                        acc.on('click', function() {
+                            if (acc.hasClass('active')) {
+                                acc.removeClass('active');
+                                var panel = $(acc.next());
+                                var panelH = panel.prop('scrollHeight') + "px";
+
+                                if (panel.css('max-height') == "0px") {
+                                    panel.css('max-height', panel.prop('scrollHeight') + "px");
+                                } else {
+                                    panel.css('max-height', "0px");
+                                }
+                                $(window).trigger('resize.px.parallax');
+                            } else {
+                                acc.addClass('active');
+                                var panel = $(acc.next());
+                                var panelH = panel.prop('scrollHeight') + "px";
+
+                                if (panel.css('max-height') == "0px") {
+                                    panel.css('max-height', panel.prop('scrollHeight') + "px");
+                                } else {
+                                    panel.css('max-height', "0px");
+                                }
+                                $(window).trigger('resize.px.parallax');
+                            }
+                        });
+                    });
+                }
+            }
+
+
+
+
+        });
+
+    </script>
 </body>
 
 </html>

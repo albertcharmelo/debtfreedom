@@ -609,7 +609,7 @@
                 <div class="services-content">
                     <div class="service-one service wow">
                         <div class="service-img">
-                            <img src="images/coding.png" alt="service-one">
+                            <img src="images/deudas.png" alt="service-one">
                         </div>
                         <div class="service-description">
                             <h2>Deudas</h2>
@@ -621,7 +621,7 @@
                     </div>
                     <div class="service-two service wow">
                         <div class="service-img">
-                            <img src="images/instagram.png" alt="service-two">
+                            <img src="images/llamadas_molestas.png" alt="service-two">
                         </div>
                         <div class="service-description">
                             <h2>Eliminación de llamadas de colecciones</h2>
@@ -630,7 +630,7 @@
                     </div>
                     <div class="service-three service wow">
                         <div class="service-img">
-                            <img src="images/bulb.png" alt="service-three">
+                            <img src="images/credito.png" alt="service-three">
                         </div>
                         <div class="service-description">
                             <h2>Reparación de crédito</h2>
@@ -640,7 +640,7 @@
                     </div>
                     <div class="service-one service wow">
                         <div class="service-img">
-                            <img src="images/coding.png" alt="service-one">
+                            <img src="images/deuda_consolidada.png" alt="service-one">
                         </div>
                         <div class="service-description">
                             <h2>Consolidación de deudas</h2>
@@ -650,7 +650,7 @@
                     </div>
                     <div class="service-two service wow">
                         <div class="service-img">
-                            <img src="images/instagram.png" alt="service-two">
+                            <img src="images/asesoria_financiera.png" alt="service-two">
                         </div>
                         <div class="service-description">
                             <h2>Asesoría financiera</h2>
@@ -660,7 +660,7 @@
                     </div>
                     <div class="service-three service wow">
                         <div class="service-img">
-                            <img src="images/bulb.png" alt="service-three">
+                            <img src="images/pagos_bajos.png" alt="service-three">
                         </div>
                         <div class="service-description">
                             <h2>Pagos mas bajos</h2>

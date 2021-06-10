@@ -113,4 +113,4 @@ Route::prefix('panel')->middleware(['auth'])->group(function () {
 });
 
 
-Auth::routes(["register" => false]);
+// Auth::routes(["register" => false]);

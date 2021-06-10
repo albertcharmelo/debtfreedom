@@ -637,7 +637,7 @@
                     </div>
                     <!--about picture-->
                     <div class="about-img col-12 col-lg-5">
-                        <img src="/images/about.jpg" alt="Your Image">
+                        <img src="/images/about.jpg" alt="Team Debt Freedom">
                     </div>
                 </div>
 
@@ -648,12 +648,12 @@
                     <div class="col">
                         <div class="section_title_container text-center">
                             <h2 class="section_title">
-                                ¿Por qué <span style="color: #14bdee">Atriux</span>?
+                                ¿Por qué <span style="color: #36c3f2">Debt Freedom USA</span>?
                             </h2>
                             <div class="section_subtitle">
                                 <p>
-                                    Nuestras elecciones definen una ruta en nuestra vida. En Atriux te damos la
-                                    información que necesitas para tomar la desición de escogernos
+                                Debt Freedom USA cuenta con 11 años en el mercado hispano, 
+                                ofrece servicios de asesoramiento para la liquidación, consolidación y negociación de deudas.
                                 </p>
                             </div>
                         </div>
@@ -668,52 +668,52 @@
                                 <div class="elements_accordions">
                                     <div class="accordion_container">
                                         <div class="accordion d-flex flex-row align-items-center">
-                                            <div>Porque deberias escogernos?</div>
+                                            <div>¿Por qué deberías escogernos?</div>
                                         </div>
                                         <div class="accordion_panel">
                                             <p>
-                                                Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                1500s, when an unknown printer took a galley of type and scrambled it to
-                                                make a type specimen book.
+                                                <ul>
+                                                <li style="color: #384158">Consulta totalmente gratuita.</li>
+                                                <li style="color: #384158">Consolide sus deudas en un solo pago mensual.</li>
+                                                <li style="color: #384158">0% interés.</li>
+                                                <li style="color: #384158">Ahorre tiempo y dinero.</li>
+                                                <li style="color: #384158">Descanse de llamadas de cobros molestosas.</li>
+                                                </ul>
                                             </p>
                                         </div>
                                     </div>
 
                                     <div class="accordion_container">
                                         <div class="accordion d-flex flex-row align-items-center active">
-                                            <div>Que te ofrecemos?</div>
+                                            <div>¿Qué nos diferencia de los demás?</div>
                                         </div>
                                         <div class="accordion_panel">
                                             <p>
-                                                Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                1500s, when an unknown printer took a galley of type and scrambled it to
-                                                make a type specimen book.
+                                                Nuestra pasión por nuestros clientes, somos líderes en el mercado hispano. Estamos 
+                                                aquí para ayudarte a lograr tu libertad financiera. 
                                             </p>
                                         </div>
                                     </div>
 
                                     <div class="accordion_container">
                                         <div class="accordion d-flex flex-row align-items-center">
-                                            <div>Necesito invertir mucho dinero?</div>
+                                            <div>¿Cuánto cuesta la consulta?</div>
                                         </div>
                                         <div class="accordion_panel">
                                             <p>
-                                                Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                1500s, when an unknown printer took a galley of type and scrambled it to
-                                                make a type specimen book.
+                                                Nuestra consulta es totalmente gratuita. Puede dejar un formulario con sus datos 
+                                                y en breve nos pondremos en contacto. 
                                             </p>
                                         </div>
                                     </div>
 
                                     <div class="accordion_container">
                                         <div class="accordion d-flex flex-row align-items-center">
-                                            <div>En cuanto tiempo veré resultados?</div>
+                                            <div>¿En cuánto tiempo veré resultados?</div>
                                         </div>
                                         <div class="accordion_panel">
                                             <p>
-                                                Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                1500s, when an unknown printer took a galley of type and scrambled it to
-                                                make a type specimen book.
+                                                Trabajamos con tiempos muy cortos, al momento de contactarle estará un paso más cerca de lograr su libertad financiera
                                             </p>
                                         </div>
                                     </div>
@@ -726,7 +726,7 @@
                     <!-- Feature Video -->
                     <div class="col-lg-6 feature_col col-12">
                         <div class=" d-flex flex-column align-items-center justify-content-center">
-                            <img style="width: 620px; heigth: 450px" src="{{ asset('img/brand/about 5.jpg') }}"
+                            <img style="width: 620px; heigth: 450px" src="{{ asset('/public/images/debtfreedom_logo.png') }}"
                                 alt="" />
                         </div>
                     </div>
@@ -864,9 +864,11 @@
         <!--copyright-section You Can Remove After Downloading-->
         <div class="footer">
             <div class="footer-text">
-                <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Vission Solutions
+                <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> 2022 Debt Freedom USA  - Todos los derechos reservados
+                <div>	Desarrollado por <a href="https://www.vissionsolutions.com">Vission Solutions </a> | <a href="/terms"> Términos y Condiciones</a> / <a href="/privacy">Políticas de Privacidad</a></div> 
             </div>
         </div>
+
         <!--copyright-section-->
     </div>
     <!--blog end-->

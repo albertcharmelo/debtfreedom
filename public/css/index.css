@@ -584,7 +584,7 @@ body {
 
 .about-second-line {
     opacity: .8;
-    font-size: 38px;
+    font-size: 20px;
     text-align: justify;
 }
 
@@ -1236,7 +1236,7 @@ button:hover .index {
 
 .contact-info {
     width: 40%;
-    height: 500px;
+    height: 550px;
     background: url(../images/contact-back.jpg);
     background-position: center;
     background-size: cover;
@@ -1396,13 +1396,13 @@ form button:hover {
 .footer {
     background: #333641;
     width: 100%;
-    padding: 10px;
     color: whitesmoke;
     display: flex;
     flex-direction: row;
     font-family: roboto;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 3px;
 }
 
 .footer .footer-text {
@@ -1412,6 +1412,13 @@ form button:hover {
     font-weight: 400;
     opacity: 1;
 }
+
+.footer a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: inline-block;
+}
+
 
 .colors ul {
     display: flex;

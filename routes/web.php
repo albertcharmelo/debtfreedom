@@ -22,10 +22,10 @@ Route::get('/', function () {
     return  view('index')->with(compact('posts'));
 })->name('index');
 
-Route::get('/terms',function(){
+Route::get('/terms', function () {
     return view('terms');
 });
-Route::get('/privacy',function(){
+Route::get('/privacy', function () {
 
     return view('privacy');
 });
@@ -90,6 +90,8 @@ Route::post('/get/posts', function () {
 });
 Route::get('/blog/{id_show}', function ($id) {
     $post = Post::where('id_show', $id)->get()->first();
+    $post->visitas = $post->visitas + 1;
+    $post->save();
     $newestPost = Post::where('estado', 'publish')->orderBy('created_at', 'DESC')->take(3)->get();
     $MostVisitedPost = Post::where('estado', 'publish')->orderBy('visitas', 'DESC')->take(3)->get();
 

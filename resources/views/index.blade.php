@@ -32,6 +32,17 @@
             outline: 0;
         }
 
+        .otro2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100vw;
+            background-size: cover;
+            background-position: 50% 50%;
+            display: block;
+        }
+
         .paginacion {
             position: relative;
             height: auto;
@@ -194,10 +205,6 @@
             color: #fff;
         }
 
-        /*********************************
-8. Feature
-*********************************/
-
         .feature {
             width: 100%;
             padding-top: 93px;
@@ -254,36 +261,7 @@
             color: #384158;
         }
 
-        .accordion::before {
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
 
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: -1px;
-            left: 0;
-            height: 100%;
-            font-family: 'FontAwesome';
-            content: '\f105';
-            font-size: 24px;
-            color: #384158;
-            font-weight: 400;
-            -webkit-transition: all 200ms ease;
-            -moz-transition: all 200ms ease;
-            -ms-transition: all 200ms ease;
-            -o-transition: all 200ms ease;
-            transition: all 200ms ease;
-        }
-
-        .accordion.active::before {
-            content: '\f107';
-            color: #14bdee;
-        }
 
         .accordion_panel {
             padding-right: 8px;
@@ -618,44 +596,49 @@
                 Sobre <span class="color">Nosotros</span>
                 <span class="header-caption">Team Debt<span class="color">Freedom</span></span>
             </div>
-            <div class="about-main row mb-5">
-                <div class="about-first-paragraph wow col-7">
-                    <!--about description-->
-                    {{-- <span class="about-first-line">
+            <div class="about-main mb-5">
+                <div class="row">
 
+                    <div class="about-first-paragraph wow col-lg-7 col-12">
+                        <!--about description-->
+                        {{-- <span class="about-first-line">
+                        
                         <span class="color">Con más de 11 años</span> en el mercado hispano, nuestros principales
                         servicios son:
                         <br>
                         <ul style="list-style: none;">
                             <li style="font-size: 60%; color: #83c140; text-decoration: none;">Asesoramiento para la
                                 liquidación</li>
-                            <li style="font-size: 60%; color: #83c140; text-decoration: none;">Consolidación de
+                                <li style="font-size: 60%; color: #83c140; text-decoration: none;">Consolidación de
                                 deudas</li>
-                            <li style="font-size: 60%; color: #83c140; text-decoration: none;">Negociación de deudas
-                            </li>
-                        </ul>
-                    </span> --}}
+                                <li style="font-size: 60%; color: #83c140; text-decoration: none;">Negociación de deudas
+                                </li>
+                            </ul>
+                        </span> --}}
 
-                    <br>
-                    <span class="about-second-line text-justify">Nuestro éxito ayudando a las personas a salir de sus
-                        deudas y a
-                        reparar su valoración de crédito de forma permanente, lo debemos a nuestra amplia
-                        experiencia para identificar de forma rápida y efectiva, las mejores soluciones para las
-                        necesidades financieras de nuestros clientes.</span>
-                    <br>
-                    <span class="about-second-line text-justify">Descubra cómo nuestras soluciones de administración de
-                        deuda
-                        pueden ayudarlo.
-                        Hemos ayudado de forma sostenible y viable a miles de personas a liberarse de sus deudas y
-                        mejorar su crédito de forma permanente, sin necesidad de declararse en bancarrota.</span>
-                    <div class="cv">
-                        <a href="#"><button>CONTÁCTANOS <span class="colors">AHORA</span></button></a>
+                        <br>
+                        <span class="about-second-line text-justify">Nuestro éxito ayudando a las personas a salir de
+                            sus
+                            deudas y a
+                            reparar su valoración de crédito de forma permanente, lo debemos a nuestra amplia
+                            experiencia para identificar de forma rápida y efectiva, las mejores soluciones para las
+                            necesidades financieras de nuestros clientes.</span>
+                        <br>
+                        <span class="about-second-line text-justify">Descubra cómo nuestras soluciones de administración
+                            de
+                            deuda
+                            pueden ayudarlo.
+                            Hemos ayudado de forma sostenible y viable a miles de personas a liberarse de sus deudas y
+                            mejorar su crédito de forma permanente, sin necesidad de declararse en bancarrota.</span>
+                        <div class="cv">
+                            <a href="#"><button>CONTÁCTANOS <span class="colors">AHORA</span></button></a>
+                        </div>
+
                     </div>
-
-                </div>
-                <!--about picture-->
-                <div class="about-img col-5 col-xs-12">
-                    <img src="/images/about.jpg" alt="Your Image">
+                    <!--about picture-->
+                    <div class="about-img col-12 col-lg-5">
+                        <img src="/images/about.jpg" alt="Your Image">
+                    </div>
                 </div>
 
             </div>
@@ -678,7 +661,7 @@
                 </div>
                 <div class="row feature_row">
                     <!-- Feature Content -->
-                    <div class="col-lg-6 feature_col">
+                    <div class="col-lg-6 feature_col col-12">
                         <div class="feature_content">
                             <!-- Accordions -->
                             <div class="accordions">
@@ -741,7 +724,7 @@
                     </div>
 
                     <!-- Feature Video -->
-                    <div class="col-lg-6 feature_col">
+                    <div class="col-lg-6 feature_col col-12">
                         <div class=" d-flex flex-column align-items-center justify-content-center">
                             <img style="width: 620px; heigth: 450px" src="{{ asset('img/brand/about 5.jpg') }}"
                                 alt="" />
@@ -845,6 +828,7 @@
     <!--portfolio end-->
     <!--blog-->
     <div id="blog">
+        <div id="particles-js"></div>
 
         <div class="blog-header"> Blogs</span>
             <span class="header-caption"> Nuestros últimos <span class="color"> artículos</span></span>
@@ -978,232 +962,7 @@
     <script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
     <!--particles script-->
-    <script>
-        particlesJS("otro", {
-            "particles": {
-                "number": {
-                    "value": 40,
-                    "density": {
-                        "enable": true,
-                        "value_area": 800
-                    }
-                },
-                "color": {
-                    "value": "#ffffff"
-                },
-                "shape": {
-                    "type": "circle",
-                    "stroke": {
-                        "width": 0,
-                        "color": "#000000"
-                    },
-                    "polygon": {
-                        "nb_sides": 5
-                    },
-                    "image": {
-                        "src": "img/github.svg",
-                        "width": 100,
-                        "height": 100
-                    }
-                },
-                "opacity": {
-                    "value": 0.5,
-                    "random": false,
-                    "anim": {
-                        "enable": false,
-                        "speed": 1,
-                        "opacity_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "size": {
-                    "value": 3,
-                    "random": true,
-                    "anim": {
-                        "enable": false,
-                        "speed": 40,
-                        "size_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "line_linked": {
-                    "enable": true,
-                    "distance": 150,
-                    "color": "#ffffff",
-                    "opacity": 0.4,
-                    "width": 1
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 6,
-                    "direction": "none",
-                    "random": false,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
-                    "attract": {
-                        "enable": false,
-                        "rotateX": 600,
-                        "rotateY": 1200
-                    }
-                }
-            },
-            "interactivity": {
-                "detect_on": "window",
-                "events": {
-                    "onhover": {
-                        "enable": true,
-                        "mode": "repulse"
-                    },
-                    "onclick": {
-                        "enable": true,
-                        "mode": "push"
-                    },
-                    "resize": true
-                },
-                "modes": {
-                    "grab": {
-                        "distance": 400,
-                        "line_linked": {
-                            "opacity": 1
-                        }
-                    },
-                    "bubble": {
-                        "distance": 400,
-                        "size": 40,
-                        "duration": 2,
-                        "opacity": 8,
-                        "speed": 3
-                    },
-                    "repulse": {
-                        "distance": 200,
-                        "duration": 0.4
-                    },
-                    "push": {
-                        "particles_nb": 4
-                    },
-                    "remove": {
-                        "particles_nb": 2
-                    }
-                }
-            },
-            "retina_detect": true
-        });
-
-
-
-        particlesJS("particles", {
-            "particles": {
-                "number": {
-                    "value": 40,
-                    "density": {
-                        "enable": true,
-                        "value_area": 800
-                    }
-                },
-                "color": {
-                    "value": "#ffffff"
-                },
-                "shape": {
-                    "type": "circle",
-                    "stroke": {
-                        "width": 0,
-                        "color": "#000000"
-                    },
-                    "polygon": {
-                        "nb_sides": 5
-                    },
-                    "image": {
-                        "src": "img/github.svg",
-                        "width": 100,
-                        "height": 100
-                    }
-                },
-                "opacity": {
-                    "value": 0.5,
-                    "random": false,
-                    "anim": {
-                        "enable": false,
-                        "speed": 1,
-                        "opacity_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "size": {
-                    "value": 3,
-                    "random": true,
-                    "anim": {
-                        "enable": false,
-                        "speed": 40,
-                        "size_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "line_linked": {
-                    "enable": true,
-                    "distance": 150,
-                    "color": "#ffffff",
-                    "opacity": 0.4,
-                    "width": 1
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 6,
-                    "direction": "none",
-                    "random": false,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
-                    "attract": {
-                        "enable": false,
-                        "rotateX": 600,
-                        "rotateY": 1200
-                    }
-                }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": {
-                        "enable": true,
-                        "mode": "repulse"
-                    },
-                    "onclick": {
-                        "enable": true,
-                        "mode": "push"
-                    },
-                    "resize": true
-                },
-                "modes": {
-                    "grab": {
-                        "distance": 400,
-                        "line_linked": {
-                            "opacity": 1
-                        }
-                    },
-                    "bubble": {
-                        "distance": 400,
-                        "size": 40,
-                        "duration": 2,
-                        "opacity": 8,
-                        "speed": 3
-                    },
-                    "repulse": {
-                        "distance": 200,
-                        "duration": 0.4
-                    },
-                    "push": {
-                        "particles_nb": 4
-                    },
-                    "remove": {
-                        "particles_nb": 2
-                    }
-                }
-            },
-            "retina_detect": true
-        });
-
-    </script>
+    <script src="/js/particulas.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         $(document).ready(function() {
@@ -1338,51 +1097,9 @@
 
     </script>
     <script>
-        /* JS Document */
-
-        /******************************
-
-        [Table of Contents]
-
-        1. Vars and Inits
-        2. Set Header
-        3. Init Menu
-        4. Init Header Search
-        5. Init Accordions
-        6. Init Video
-        7. Initialize Milestones
-        8. Init Partners Slider
-
-
-        ******************************/
-
         $(document).ready(function() {
             "use strict";
-
-            /* 
-
-            1. Vars and Inits
-
-            */
-
-            ;
-            // var menuActive = false;
-            // var menu = $('.menu');
-            // var burger = $('.hamburger');
-            // var ctrl = new ScrollMagic.Controller();
-
-
-
-
             initAccordions();
-
-
-
-            /* 
-
-            6. Init Accordions
-
-            */
 
             function initAccordions() {
                 if ($('.accordion').length) {
@@ -1431,10 +1148,6 @@
                     });
                 }
             }
-
-
-
-
         });
 
     </script>

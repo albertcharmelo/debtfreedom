@@ -573,7 +573,7 @@
 
                 </div> -->
             <!--Contact form-->
-            <div class="home_end">
+            <div class="home_end" style="margin-bottom: 0;min-height: 80px;">
                 <p>
                     ¿Tienes dudas? No te preocupes puedes consultarnos GRATIS aquí
                 </p>
@@ -652,8 +652,9 @@
                             </h2>
                             <div class="section_subtitle">
                                 <p>
-                                Debt Freedom USA cuenta con 11 años en el mercado hispano, 
-                                ofrece servicios de asesoramiento para la liquidación, consolidación y negociación de deudas.
+                                    Debt Freedom USA cuenta con 11 años en el mercado hispano,
+                                    ofrece servicios de asesoramiento para la liquidación, consolidación y negociación
+                                    de deudas.
                                 </p>
                             </div>
                         </div>
@@ -672,13 +673,15 @@
                                         </div>
                                         <div class="accordion_panel">
                                             <p>
-                                                <ul>
+                                            <ul>
                                                 <li style="color: #384158">Consulta totalmente gratuita.</li>
-                                                <li style="color: #384158">Consolide sus deudas en un solo pago mensual.</li>
+                                                <li style="color: #384158">Consolide sus deudas en un solo pago mensual.
+                                                </li>
                                                 <li style="color: #384158">0% interés.</li>
                                                 <li style="color: #384158">Ahorre tiempo y dinero.</li>
-                                                <li style="color: #384158">Descanse de llamadas de cobros molestosas.</li>
-                                                </ul>
+                                                <li style="color: #384158">Descanse de llamadas de cobros molestosas.
+                                                </li>
+                                            </ul>
                                             </p>
                                         </div>
                                     </div>
@@ -689,8 +692,9 @@
                                         </div>
                                         <div class="accordion_panel">
                                             <p>
-                                                Nuestra pasión por nuestros clientes, somos líderes en el mercado hispano. Estamos 
-                                                aquí para ayudarte a lograr tu libertad financiera. 
+                                                Nuestra pasión por nuestros clientes, somos líderes en el mercado
+                                                hispano. Estamos
+                                                aquí para ayudarte a lograr tu libertad financiera.
                                             </p>
                                         </div>
                                     </div>
@@ -701,8 +705,9 @@
                                         </div>
                                         <div class="accordion_panel">
                                             <p>
-                                                Nuestra consulta es totalmente gratuita. Puede dejar un formulario con sus datos 
-                                                y en breve nos pondremos en contacto. 
+                                                Nuestra consulta es totalmente gratuita. Puede dejar un formulario con
+                                                sus datos
+                                                y en breve nos pondremos en contacto.
                                             </p>
                                         </div>
                                     </div>
@@ -713,7 +718,8 @@
                                         </div>
                                         <div class="accordion_panel">
                                             <p>
-                                                Trabajamos con tiempos muy cortos, al momento de contactarle estará un paso más cerca de lograr su libertad financiera
+                                                Trabajamos con tiempos muy cortos, al momento de contactarle estará un
+                                                paso más cerca de lograr su libertad financiera
                                             </p>
                                         </div>
                                     </div>
@@ -725,9 +731,10 @@
 
                     <!-- Feature Video -->
                     <div class="col-lg-6 feature_col col-12">
-                        <div class=" d-flex flex-column align-items-center justify-content-center">
-                            <img style="width: 620px; heigth: 450px" src="{{ asset('/public/images/debtfreedom_logo.png') }}"
-                                alt="" />
+                        <div class=" d-flex flex-column align-items-center justify-content-center d-none d-sm-block">
+                            <img style="width: 620px; heigth: 450px" class="img-accordion"
+                                src="{{ asset('/images/Logo_mockup_debtfreedomusa.jpg') }}" alt="" />
+
                         </div>
                     </div>
                 </div>
@@ -735,7 +742,7 @@
         </div>
 
         <!--copyright-section You Can Remove After Downloading-->
-        <div class="footer">
+        <div class="footer d-flex justify-content-center align-items-center">
             <div class="footer-text">
                 <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Vission
                 Solutions
@@ -862,11 +869,16 @@
         </div>
 
         <!--copyright-section You Can Remove After Downloading-->
-        <div class="footer">
-            <div class="footer-text">
-                <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> 2022 Debt Freedom USA  - Todos los derechos reservados
-                <div>	Desarrollado por <a href="https://www.vissionsolutions.com">Vission Solutions </a> | <a href="/terms"> Términos y Condiciones</a> / <a href="/privacy">Políticas de Privacidad</a></div> 
+        <div class="footer d-flex ">
+            <div class="footer-text  justify-content-start ">
+                © 2022 Debt Freedom
+                USA - Todos los derechos reservados
+
             </div>
+            <span class=" footer-text justify-content-end"> Desarrollado por <a
+                    href="https://www.vissionsolutions.com">Vission
+                    Solutions </a> | <a href="/terms"> Términos y Condiciones</a> / <a href="/privacy">Políticas de
+                    Privacidad</a></span>
         </div>
 
         <!--copyright-section-->
@@ -938,7 +950,7 @@
 
             <!--copyright-section-->
         </div>
-        <div class="footer" id="footer">
+        <div class="footer d-flex justify-content-center align-items-center" id="footer">
             <div class="footer-text">
                 <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Vission Solutions
             </div>

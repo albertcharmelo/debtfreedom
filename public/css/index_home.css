@@ -640,3 +640,7 @@ input[id="3"]:checked~.pagination .pagination-item[for="3"] {
 ************/
 
 @media only screen and (max-width: 400px) {}
+
+canvas {
+    height: 100vh;
+}

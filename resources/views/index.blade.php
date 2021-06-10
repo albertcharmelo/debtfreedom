@@ -24,6 +24,10 @@
     <link href="{{ asset('css/font-awesome-4.7.0/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/fontawasome.css') }}">
     <script src="{{ asset('js/fontawesome.js') }}"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
         button {
             -webkit-appearance: none;
@@ -847,12 +851,13 @@
     <!--portfolio end-->
     <!--blog-->
     <div id="blog">
-        <div id="particles-js"></div>
 
         <div class="blog-header"> Blogs</span>
             <span class="header-caption"> Nuestros últimos <span class="color"> artículos</span></span>
         </div>
         <div class="blog-content" id="blog-content">
+
+
             @foreach ($posts as $post)
                 <div class="blogs">
                     <a href="/blog/{{ $post->id_show }}">
@@ -899,14 +904,12 @@
     <!--contact-->
     <div id="contact">
         <div class="contact-header"> Envíanos un<span class="color"> mensaje</span>
+
             <!-- <div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div></div> -->
             <br>
             <div class="contact-content" style="min-height: 80vh;">
                 <!--Contact form-->
                 <div class="contact-form">
-                    <div class="form-header">
-                        Contacta con nosotros
-                    </div>
                     <form id="myForm" action="#">
                         <div class="input-line">
                             <input id="name" type="text" placeholder="Nombre" class="input-name">
@@ -977,6 +980,8 @@
         </div>
         <!--copyright-section-->
         <!--contact end-->
+
+
     </div>
     <!--all the divisions-->
     <script src="js/jquery.min.js"></script>
@@ -986,18 +991,19 @@
 
             localStorage.setItem('amount', $('#priceSlider').val());
             location.replace("/calculator")
-            // window.open('https://www.google.com/');
+
 
         })
 
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/particles.min.js"></script>
+    <script src="/js/particles.js"></script>
+    <script src="/js/particles.min.js"></script>
+    <script src="/js/particulas.js"></script>
+
     <script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
     <!--particles script-->
-    <script src="/js/particulas.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         $(document).ready(function() {

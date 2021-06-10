@@ -73,7 +73,7 @@
             background: #83c140;
             outline: none;
             font-size: 20px;
-            font-family: aileron;
+            font-family: roboto;
             border-radius: 4px;
             font-weight: 400;
             cursor: pointer;
@@ -631,7 +631,7 @@
                             Hemos ayudado de forma sostenible y viable a miles de personas a liberarse de sus deudas y
                             mejorar su crédito de forma permanente, sin necesidad de declararse en bancarrota.</span>
                         <div class="cv">
-                            <a href="#"><button>CONTÁCTANOS <span class="colors">AHORA</span></button></a>
+                            <a href="#"><button>CONTÁCTANOS <span>AHORA</span></button></a>
                         </div>
 
                     </div>
@@ -732,8 +732,8 @@
                     <!-- Feature Video -->
                     <div class="col-lg-6 feature_col col-12">
                         <div class=" d-flex flex-column align-items-center justify-content-center d-none d-sm-block">
-                            <img style="width: 620px; heigth: 450px" class="img-accordion"
-                                src="{{ asset('/images/Logo_mockup_debtfreedomusa.jpg') }}" alt="" />
+                            <img style="width: 520px; heigth: 450px" class="img-accordion"
+                                src="{{ asset('/images/debtfreedom_logo.png') }}" alt="logo debt freedomusa" />
 
                         </div>
                     </div>
@@ -742,11 +742,16 @@
         </div>
 
         <!--copyright-section You Can Remove After Downloading-->
-        <div class="footer d-flex justify-content-center align-items-center">
-            <div class="footer-text">
-                <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Vission
-                Solutions
+        <div class="footer d-flex ">
+            <div class="footer-text  justify-content-start ">
+                © 2022 Debt Freedom
+                USA - Todos los derechos reservados
+
             </div>
+            <span class=" footer-text justify-content-end"> Desarrollado por <a
+                    href="https://www.vissionsolutions.com">Vission
+                    Solutions </a> | <a href="/terms"> Términos y Condiciones</a> / <a href="/privacy">Políticas de
+                    Privacidad</a></span>
         </div>
         <!--copyright-section-->
     </div>
@@ -825,13 +830,20 @@
         </div>
     </div>
     <!--copyright-section You Can Remove After Downloading-->
-    {{-- <div class="footer">
-            <div class="footer-text">
-                <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Vission Solutions
+    {{-- <div class="footer d-flex ">
+            <div class="footer-text  justify-content-start ">
+                © 2022 Debt Freedom
+                USA - Todos los derechos reservados
+
             </div>
+            <span class=" footer-text justify-content-end"> Desarrollado por <a
+                    href="https://www.vissionsolutions.com">Vission
+                    Solutions </a> | <a href="/terms"> Términos y Condiciones</a> / <a href="/privacy">Políticas de
+                    Privacidad</a></span>
         </div> --}}
     <!--copyright-section-->
-    </div>
+
+    
     <!--portfolio end-->
     <!--blog-->
     <div id="blog">
@@ -950,11 +962,20 @@
 
             <!--copyright-section-->
         </div>
-        <div class="footer d-flex justify-content-center align-items-center" id="footer">
-            <div class="footer-text">
-                <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Vission Solutions
+
+        <!--copyright-section You Can Remove After Downloading-->
+        <div class="footer d-flex ">
+            <div class="footer-text  justify-content-start ">
+                © 2022 Debt Freedom
+                USA - Todos los derechos reservados
+
             </div>
+            <span class=" footer-text justify-content-end"> Desarrollado por <a
+                    href="https://www.vissionsolutions.com">Vission
+                    Solutions </a> | <a href="/terms"> Términos y Condiciones</a> / <a href="/privacy">Políticas de
+                    Privacidad</a></span>
         </div>
+        <!--copyright-section-->
         <!--contact end-->
     </div>
     <!--all the divisions-->
